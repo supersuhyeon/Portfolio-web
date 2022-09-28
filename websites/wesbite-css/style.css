@@ -138,18 +138,75 @@ button:hover {
 
 .project-title{
     font-size: 2.5rem;
+}
+
+.responsive{
+    border-radius: 10px;
+    background-color: darkblue;
+    color: #fff;
+}
+
+.project-photo{
+    margin-top: 3rem;
+}
+
+.project-photo-box{
     display: flex;
 }
 
-video{
-width: 100%;
-border: 1px solid black;
-box-sizing: border-box;
+/* .project-photo.monsquad {
+background: url('/websites/images/monsquadmonbile1.gif');
+background-repeat: no-repeat;
+background-size: cover;
+width: 414px;
+height: 600px;
+border: 2px solid black;
+margin-right: 10px;
+} */
+
+
+.project-photo.monsquad-moodboard{
+width: 600px;
+height: 600px;
+background: url('/websites/images/monsquad-mood-board.png');
+background-size: cover;
 }
 
-.animated{
-    width: 1000px;
-    height: 500px;
+.project-photo.monsquad-moodboard>p{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    display: block;
+    background-color: black;
+    padding-left: 4em;
+}
+
+.project-desc{
+    padding: 2rem 0;
+}
+
+.project-desc .overview{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project-desc .description{
+    font-size: 1.2rem;
+}
+
+.project-desc .tools{
+    display: block;
+    margin-top: 1rem;
+}
+
+.project-desc .linkbox{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.project-desc .linkbox>img{
+    margin-right: 10px;
 }
 
 footer{

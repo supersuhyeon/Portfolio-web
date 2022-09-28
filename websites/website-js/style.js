@@ -32,15 +32,15 @@ const myName = document.querySelector('.local-nav-links .my-name')
        })
     })
 
-    const staticImg = "/static.png"
-    const gifImg = "/monsquad22.gif"
+    // const staticImg = "/airmug-thumnail.png"
+    // const gifImg = "/airmugprogif.gif"
 
-    const animated = document.querySelector('.animated')
-    animated.src = staticImg;
+    // const airmugAni = document.querySelector('.project .airmug')
+    // airmugAni.src = staticImg;
 
-    animated.addEventListener('mouseenter', ()=>{
-        animated.src = gifImg
-    })
-    animated.addEventListener('mouseleave', ()=>{
-        animated.src = staticImg
-    })
+    // airmugAni.addEventListener('mouseenter', ()=>{
+    //     airmugAni.src = gifImg
+    // })
+    // airmugAni.addEventListener('mouseleave', ()=>{
+    //     airmugAni.src = staticImg
+    // })
