@@ -91,6 +91,10 @@ section {
     margin-right: 10px;
 }
 
+.howtoplay{
+    margin-top: 1em;
+}
+
 @media screen and (max-width: 768px){
    
     .project-title{
