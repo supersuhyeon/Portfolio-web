@@ -7,13 +7,15 @@
 	<title>Suhyeon Kim</title>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/default.css">
 	<link rel="stylesheet" href="css/main.css">
 	  <!-- gsap & scroll to plugin -->
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollToPlugin.min.js" integrity="sha512-lFUdnIP0VHYatqtK0Mni2SDBS62JtUUPq9F26a/SDPZMHoGp3E1WO9gHXu1DddaN1ig1fn4mvHAqJ4x0kauKQw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	  <script defer src="js/main.js"></script>
+	  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script defer src="js/main.js"></script>
 	</head>
     
     <body class="before-load">
@@ -28,11 +30,11 @@
 
 		<nav class="local-nav">
 			<div class="local-nav-links">
-				<a href="#" class="my-name">Suhyeon Kim</a>
-				<a href="#">About</a>
-				<a href="#">Work</a>
-				<a href="#">Contact</a>
-				<a href="#">Resume</a>
+				<a href="/index.html" class="my-name">Suhyeon Kim</a>
+				<a class="menu-about" href="javascript:void">About</a>
+				<a class="menu-work" href="javascript:void">Work</a>
+				<a class="menu-contact" href="javascript:void">Contact</a>
+				<a href="javascript:void">Resume</a>
 			</div>
 		</nav>
 	
@@ -54,8 +56,8 @@
             <img class="sticky-elem pencil" src="images/pencil2.png">
         </section>
 
-		<div class="normal-content introduction">
-			<p class="mid-message introduction">
+		<div class="normal-content introduction" id="movetointro">
+			<p class="mid-message introduction" data-aos="fade-up" data-aos-duration="1000">
 				<strong>Hello,<br>
 					Nice to meet you</strong>
 			</p>
@@ -84,7 +86,7 @@
 					Here are a few languages and tools that<br> I have been studying and working with recently;<br>
 				</p>
 
-				<div class="icons">
+				<div class="icons" data-aos="zoom-in">
 					<img src="./images/react.svg" alt="">
 					<img src="./images/typescript.svg" alt="">
 					<img src="./images/webpack.svg" alt="">
@@ -103,102 +105,110 @@
 		
 		</div>
 
-		<div class="normal-content work">
-			<p class="mid-message work">
+		<div class="normal-content work" id="movetowork">
+			<p class="mid-message work" data-aos="fade-up" data-aos-duration="1000" >
                 <strong>This is<br>
                 My Featured Work</strong>
             </p>
+
             <div class="project-container">
 
-                <div class="project website">
-                    <div class="overlay">
-                    
-                    <div class="text-container">
-                    <div class="p-title">
-                        <p> <strong> Responsive Websites</strong></p>
-                    </div>
-                    <div class="p-description">
-                        <p>
-                            Here are my coding projects that include branded <br>
-                            websites, mock websites, JavaScript mini games, <br>
-                            interactive mouse cursors, etc. with response web principles. <br>
-                        </p>
-                    </div>
-                    <div class="p-tool">
-                        <p>VS Code  &nbsp;&nbsp;  HTML  &nbsp;&nbsp;  CSS  &nbsp;&nbsp;  Javascript  &nbsp;&nbsp;  SVG  &nbsp;&nbsp;  React</p>
-                    </div>
-                    <div class="p-icons">
-                        <a href="#"><img src="./images/githubicon.svg" alt=""></a>
-                    </div>
-                </div>
-                </div>
-                </div>
-
-                <div class="project javascript">
-                    <div class="overlay">
+                <li class="project website">
+                    <a class="project-link-wrapper" href="./websites/index.html">
+                        <div class="overlay">
                         <div class="text-container">
-                    <div class="p-title">
-                        <p> <strong>Javascript Mini-projects</strong> </p>
-                    </div>
-                    <div class="p-description">
-                        <p>
-                            Here are my coding projects that include branded <br>
-                            websites, mock websites, JavaScript mini games, <br>
-                            interactive mouse cursors, etc. with response web principles. <br>
-                        </p>
-                    </div>
-                    <div class="p-tool">
-                        <p>VS Code  &nbsp;&nbsp;  HTML  &nbsp;&nbsp;  CSS  &nbsp;&nbsp;  Javascript  &nbsp;&nbsp;  SVG  &nbsp;&nbsp;  React</p>
-                    </div>
-                    <div class="p-icons">
-                       <a href="#"><img src="./images/githubicon.svg" alt=""></a> 
-                    </div>
-                </div>
-                </div>
-                </div>
+                        <span class="p-title">
+                            <p><strong> Responsive Websites</strong></p>
+                        </span>
 
-                <div class="project graphic">
-                    <div class="overlay">
-                        <div class="text-container">
-                    <div class="p-title">
-                        <p> <strong>2D Graphic Design</strong> </p>
-                    </div>
-                    <div class="p-description">
-                        <p>My design work includes various 2D design elements such as posters, product descriptions, 
-                            web banners, illustrations, thumbnails, and logos.
+                        <span class="p-description">
+                            <p>
+                                Here are my coding projects that include branded <br>
+                                websites, mock websites, JavaScript mini games, <br>
+                                interactive mouse cursors, etc. with response web principles. <br>
                             </p>
+                        </span>
+                        <span class="p-tool">
+                            <p>VS Code  &nbsp;&nbsp;  HTML  &nbsp;&nbsp;  CSS  &nbsp;&nbsp;  Javascript  &nbsp;&nbsp;  SVG  &nbsp;&nbsp;  React</p>
+                        </span>
+                        </div>
                     </div>
-                    <div class="p-tool">
-                        <p>Adobe Photoshop  &nbsp;&nbsp;  Adobe Illustration</p>
-                    </div>
-               
-                </div>
-                </div>
-                </div>
+                    </a>
+                </li>
 
-                <div class="project video">
-                    <div class="overlay">
+                <li class="project javascript">
+                    <a class="project-link-wrapper" href="./mini-projects/index.html">
+                        <div class="overlay">
                         <div class="text-container">
-                    <div class="p-title">
-                        <p> <strong>Video Contents</strong></p>
+                        <span class="p-title">
+                            <p><strong> Javascript Mini-projects</strong></p>
+                        </span>
+
+                        <span class="p-description">
+                            <p>
+                                Here are my coding projects that include branded <br>
+                            websites, mock websites, JavaScript mini games, <br>
+                            interactive mouse cursors, etc. with response web principles. <br>
+                            </p>
+                        </span>
+                        <span class="p-tool">
+                            <p>VS Code  &nbsp;&nbsp;  HTML  &nbsp;&nbsp;  CSS  &nbsp;&nbsp;  Javascript  &nbsp;&nbsp;  SVG  &nbsp;&nbsp;  React</p>
+                        </span>
                     </div>
-                    <div class="p-description">
-                        <p>I am passionate about video content. <br> 
-                        I am able to manage the video production process from end-to-end, including planning, script production, shooting, and editing. <br>
-                        I grew a YouTube channel to 3,000 subscribers in 6 months and generated ad revenue. Some of my videos were featured in Korean newspapers and publications.</p>
+                </div>
+                    </a>
+                </li>
+
+                <li class="project graphic">
+                    <a class="project-link-wrapper" href="./websites/index.html">
+                        <div class="overlay">
+                        <div class="text-container">
+                        <span class="p-title">
+                            <p><strong> 2D graphic Design</strong></p>
+                        </span>
+
+                        <span class="p-description">
+                            <p>
+                                My design work includes various 2D design elements such as posters, product descriptions, 
+                                web banners, illustrations, thumbnails, and logos.
+                            </p>
+                        </span>
+                        <span class="p-tool">
+                            <p>Adobe Photoshop  &nbsp;&nbsp;  Adobe Illustration</p>
+                        </span>
                     </div>
-                    <div class="p-tool">
-                        <p>Adobe Premiere Pro  &nbsp;&nbsp;  After After Effect</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="project video">
+                    <a class="project-link-wrapper" href="./websites/index.html">
+                        <div class="overlay">
+                        <div class="text-container">
+                        <span class="p-title">
+                            <p><strong> Video contents</strong></p>
+                        </span>
+
+                        <span class="p-description">
+                            <p>
+                                I am passionate about video content. <br> 
+                                I am able to manage the video production process from end-to-end, including planning, script production, shooting, and editing. <br>
+                                I grew a YouTube channel to 3,000 subscribers in 6 months and generated ad revenue. Some of my videos were featured in Korean newspapers and publications.
+                            </p>
+                        </span>
+                        <span class="p-tool">
+                            <p>Adobe Premiere Pro  &nbsp;&nbsp;  Adobe After Effect</p>
+                        </span>
                     </div>
-         
                 </div>
-                </div>
-                </div>
+                    </a>
+                </li>
+
             </div>
 		</div>
 
-		<div class="normal-content contact">
-			<p class="mid-message">
+		<div class="normal-content contact" id="movetocontact">
+			<p class="mid-message" data-aos="fade-up">
 				<strong>
 				Here Is My Contact</strong></p>
                 <p class="desc-message">

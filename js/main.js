@@ -215,6 +215,24 @@
            })
         })
 
+		const menuAbout = document.querySelector('.menu-about')
+		menuAbout.addEventListener('click', ()=>{
+			const moveToIntro = document.querySelector('#movetointro').offsetTop
+			window.scrollTo({top: moveToIntro, behavior:'smooth'})
+		})
+
+		const menuWork = document.querySelector('.menu-work')
+		menuWork.addEventListener('click', ()=>{
+			const moveToWork = document.querySelector('#movetowork').offsetTop
+			window.scrollTo({top: moveToWork, behavior:'smooth'})
+		})
+
+		const menuContact = document.querySelector('.menu-contact')
+		menuContact.addEventListener('click', ()=>{
+			const moveToContact = document.querySelector('#movetocontact').offsetTop
+			window.scrollTo({top: moveToContact, behavior:'smooth'})
+		})
+
   		window.addEventListener('resize', () => {
   			if (window.innerWidth > 900) {
   				setLayout();
@@ -231,5 +249,8 @@
 
 	});
 
+	AOS.init();
 
 })();
+
+
