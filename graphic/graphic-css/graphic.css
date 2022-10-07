@@ -1,0 +1,106 @@
+@charset 'utf-8';
+
+
+.graphicbox-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.imgbox{
+    margin: 0 1em 2em;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.graphictext{
+text-align: center;
+}
+
+.graphic-monsquad{
+width: 430px;
+}
+
+.graphic-cow{
+width: 400px;
+}
+
+.graphic-daldaguri{
+width: 420px;
+}
+
+.graphic-kettle{
+width: 360px;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.modalbox {
+position: absolute;
+background-color: #fff;
+width: 100%;
+height: 100%;
+text-align: center;
+}
+
+.swiper {
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    top: 6vh;
+    background-color: red;
+    overflow: hidden;
+  }
+
+.swiper-button-next::after,
+.swiper-button-prev::after
+{
+    content: none !important;
+}
+
+.swiper-button-next .material-icons,
+.swiper-button-prev .material-icons{
+ color: black;
+ font-size: 0.8rem;
+}
+
+  .guidetitle{
+    position: absolute;
+    bottom: 3vh;
+    left: 3vh;
+}
+
+.modalbox .closebtn {
+    background-color: yellow;
+    position: absolute;
+    top: 2vh;
+    right: 1vw;
+    transition: 0.2s ease-in-out;
+}
+.closebtn .material-icons{
+    font-size: 1.2rem;
+   
+}
+.closebtn:hover{
+    transform: scale(1.1);
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+.stop-scroll{
+    overflow-y: hidden;
+}

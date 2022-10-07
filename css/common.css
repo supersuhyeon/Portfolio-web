@@ -1,0 +1,273 @@
+@charset 'utf-8';
+
+html {
+	font-family: 'Noto Sans KR', sans-serif;
+	font-size: 14px;
+}
+body {
+	overflow-x: hidden;
+	color: rgb(29, 29, 31);
+	letter-spacing: -0.05em;
+	background: white;
+    padding-top: 52px;
+}
+
+.marginarea{
+    max-width: 1000px;
+    padding: 0 1rem;
+    margin: auto;
+}
+
+p {
+	line-height: 1.6;
+}
+a {
+	color: rgb(29, 29, 31);
+	text-decoration: none;
+}
+
+button {
+    border: 1px solid #333;
+    color: black;
+    transition: 0.2s;
+}
+
+button:hover {
+ background-color: darkblue;
+ color: white;
+}
+
+
+/* menu bar */
+
+.local-nav{
+    height: 52px;
+    border-bottom: 1px solid #ddd;
+    padding: 0 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    background: rgba(255,255,255,0.1);
+   
+    -webkit-backdrop-filter: saturate(180%) blur(15px) ;
+    -moz-backdrop-filter: saturate(180%) blur(15px) ;
+    -o-backdrop-filter: saturate(180%) blur(15px) ;
+    backdrop-filter: saturate(180%) blur(15px);
+}
+
+.local-nav-links a{
+    color: black;
+}
+
+.local-nav-links a{
+    color: black;
+    transition: 0.2s;
+}
+
+.local-nav-links a:hover{
+color: darkblue;
+transform: scale(1.1);
+}
+
+.local-nav-links{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;   
+    height: 100%;
+    align-items: center;
+    
+}
+.my-name{
+    margin-right: auto;
+    font-size: 1rem;
+    font-weight:bold;
+    transition: 0.2s;
+}
+
+.local-nav-links a:not(.my-name){
+    margin-left: 2em;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+/* section common */
+
+section {
+    height: 100%;
+}
+
+.responsive{
+    border-radius: 10px;
+    background-color: darkblue;
+    color: #fff;
+}
+
+.project {
+    margin-top: 10em;
+}
+
+.project-photo{
+    width: 100%;
+    height: 100%;
+    margin-top: 3rem;
+}
+
+.project-title{
+    font-size: 2.5rem;
+}
+
+.project-desc{
+    padding: 2rem 0;
+}
+
+.project-desc .overview{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project-desc .description{
+    font-size: 1.2rem;
+}
+
+.project-desc .tools{
+    display: block;
+    margin-top: 1rem;
+}
+
+.project-desc .linkbox{
+    margin-top: 1rem;
+    display: flex;
+}
+
+.project-desc .linkbox>img{
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 768px){
+   
+    .project-title{
+        font-size: 1.5rem;
+    }
+    
+    .project-desc .overview{
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-desc .description{
+        font-size: 1.2rem;
+    }
+
+    .project-photo{
+        margin-top: 1.5rem;
+    }
+
+    .project-desc{
+        padding: 1rem 0;
+    }
+
+    .responsive{
+        font-size: 0.5em;
+    }
+}
+
+/* section - intro */
+.intro .intro-wrapper{
+    margin-top: 10rem;
+    height: 100%;
+}
+
+.intro h1{
+    font-size: 5rem;
+}
+
+.main-message{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.main-sns{
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.main-sns .sns-left{
+    display: flex;
+}
+
+.main-sns img{
+    margin-right: 0.6rem;
+    display: block;
+}
+
+.intro .main-sns .main-email{
+    margin-left: auto;
+}
+
+.intro-picture{
+    width: 100%;
+    height: 100%;
+}
+
+.intro-mobile{
+    display: none;
+}
+
+@media screen and (max-width: 768px){
+    .intro h1{
+        font-size: 2.5rem;
+    }
+
+    .main-message{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+    }
+
+    .intro-web{
+        display: none;
+    }
+
+    .intro-mobile{
+        display: block;
+    }
+    
+}
+
+
+/* footer and others */
+footer{
+	border-top: 1px solid black;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 52px;
+    margin-top: 10em;
+}
+
+#to-top{
+    width: 32px;
+    height: 32px;
+    background-color: #333;
+    color: white;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 70px;
+    right:30px;
+    z-index: 99;
+    visibility: hidden;
+}
+
+.material-icons{
+	font-size: 18px;
+}
