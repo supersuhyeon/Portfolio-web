@@ -9,7 +9,7 @@
 }
 
 .imgbox{
-    margin: 0 1em 2em;
+    margin: 0 1em 3em;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -61,7 +61,7 @@ text-align: center;
     top: 6vh;
     background-color: red;
     overflow: hidden;
-  }
+}
 
 .swiper-button-next::after,
 .swiper-button-prev::after
@@ -73,16 +73,23 @@ text-align: center;
 .swiper-button-prev .material-icons{
  color: black;
  font-size: 0.8rem;
+ transition: 0.2s ease-in-out;
 }
 
-  .guidetitle{
+.swiper-button-next:hover .material-icons,
+.swiper-button-prev:hover .material-icons{
+transform: scale(1.1);
+}
+
+
+.guidetitle{
+    padding: 20px;
     position: absolute;
-    bottom: 3vh;
-    left: 3vh;
+    bottom: 0;
+    left: 0;
 }
 
 .modalbox .closebtn {
-    background-color: yellow;
     position: absolute;
     top: 2vh;
     right: 1vw;
