@@ -134,16 +134,22 @@ section {
 
 .project-desc .tools{
     display: block;
+    font-size: 1rem;
     margin-top: 1rem;
 }
 
 .project-desc .linkbox{
     margin-top: 1rem;
     display: flex;
+    align-items: center;
 }
 
-.project-desc .linkbox>img{
-    margin-right: 10px;
+.project-desc .linkbox>a{
+    margin-right: 12px;
+}
+
+.linkbox i{
+    font-size: 24px;
 }
 
 @media screen and (max-width: 768px){
