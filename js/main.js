@@ -233,6 +233,21 @@
 			window.scrollTo({top: moveToContact, behavior:'smooth'})
 		})
 
+		const btnToggle = document.querySelector('.viewmore')
+		const extraBox = document.querySelector('.blog-extra-wrapper')
+		let isHideDescription = false;
+
+		btnToggle.addEventListener('click', ()=>{
+			isHideDescription = !isHideDescription
+			if(isHideDescription){
+				extraBox.classList.add('active')
+				btnToggle.innerHTML = 'View less'
+			}else{
+				extraBox.classList.remove('active')
+				btnToggle.innerHTML = 'View more'
+			}
+		})
+
   		window.addEventListener('resize', () => {
   			if (window.innerWidth > 900) {
   				setLayout();

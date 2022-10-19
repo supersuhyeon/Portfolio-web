@@ -93,7 +93,7 @@ transform: scale(1.1);
     position: absolute;
     top: 2vh;
     right: 1vw;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out; 
 }
 .closebtn .material-icons{
     font-size: 1.2rem;
