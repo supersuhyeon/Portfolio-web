@@ -13,21 +13,21 @@
 /* project - flowergarden */
 
 .project-flower-box{
-display: flex;
-width: 972px;
+    display: flex;
+    width: 972px;
 }
 
 .before-performance,
 .after-performance{
-width: 476px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-text-align: center;
-color: white;
-padding: 2rem;
-box-sizing: border-box;
+    width: 476px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    box-sizing: border-box;
 }
 
 .before-performance{
@@ -45,7 +45,7 @@ box-sizing: border-box;
 
 .before-performance:hover,
 .after-performance:hover{
-filter: grayscale(0);
+    filter: grayscale(0);
 }
 
 .project-flower-box-mobile{
@@ -83,6 +83,4 @@ filter: grayscale(0);
         margin-bottom: 1em;
     }
 }
-
-
 

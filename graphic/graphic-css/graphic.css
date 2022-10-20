@@ -15,23 +15,23 @@
 }
 
 .graphictext{
-text-align: center;
+    text-align: center;
 }
 
 .graphic-monsquad{
-width: 430px;
+    width: 430px;
 }
 
 .graphic-cow{
-width: 400px;
+    width: 400px;
 }
 
 .graphic-daldaguri{
-width: 420px;
+    width: 420px;
 }
 
 .graphic-kettle{
-width: 360px;
+    width: 360px;
 }
 
 .modal{
@@ -46,53 +46,32 @@ width: 360px;
     z-index: 99;
 }
 
-.modalbox {
-position: absolute;
-background-color: #fff;
-width: 100%;
-height: 100%;
-text-align: center;
-}
-
-.swiper {
-    position: absolute;
+.bgoverlay {
     width: 100%;
-    height: 85%;
-    top: 6vh;
-    background-color: red;
-    overflow: hidden;
-}
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
 
-.swiper-button-next::after,
-.swiper-button-prev::after
-{
-    content: none !important;
-}
-
-.swiper-button-next .material-icons,
-.swiper-button-prev .material-icons{
- color: black;
- font-size: 0.8rem;
- transition: 0.2s ease-in-out;
-}
-
-.swiper-button-next:hover .material-icons,
-.swiper-button-prev:hover .material-icons{
-transform: scale(1.1);
-}
-
-
-.guidetitle{
-    padding: 20px;
+.modalbox {
     position: absolute;
-    bottom: 0;
-    left: 0;
+    background-color: #fff;
+    /* width: 800px;
+    height: 600px; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 .modalbox .closebtn {
     position: absolute;
-    top: 2vh;
-    right: 1vw;
+    top: 10px;
+    right: 10px;
     transition: 0.2s ease-in-out; 
 }
 .closebtn .material-icons{
@@ -104,10 +83,88 @@ transform: scale(1.1);
     font-weight: bold;
 }
 
+.swiper {
+    /* background-color: red; */
+    width: 100%;
+    height: 100%;
+}
+
+.swiper .slide-img{
+    width: 100%;
+    height: 100%;
+}
+
+.swiper .slide-img img{ 
+    max-width: 100%;
+    height: 100%;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after
+{
+    content: none !important;
+}
+
+.swiper-button-next .material-icons,
+.swiper-button-prev .material-icons{
+    color: black;
+    font-size: 0.8rem;
+    transition: 0.2s ease-in-out;
+}
+
+.swiper-button-next:hover .material-icons,
+.swiper-button-prev:hover .material-icons{
+    transform: scale(1.1);
+}
+
+.guidetitle{
+    margin-top: 20px;
+}
+
+.weblink{
+   border: 1px solid black;
+   padding: 3px;
+   box-sizing: border-box;
+   margin-top: 10px;
+}
+
 .hidden{
     display: none;
 }
 
 .stop-scroll{
     overflow-y: hidden;
+}
+
+@media screen and (max-width: 768px){
+    .modalbox {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 260px;
+    }
+
+    .swiper .slide-img img{ 
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .modalbox .closebtn {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        transition: 0.2s ease-in-out; 
+    }
+
+    .closebtn .material-icons{
+        font-size: 2rem;
+       
+    }
+    .closebtn:hover{
+        transform: scale(1.1);
+        font-weight: bold;
+    }
 }

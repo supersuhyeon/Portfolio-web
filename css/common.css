@@ -130,6 +130,7 @@ section {
 
 .project-desc .description{
     font-size: 1.2rem;
+    line-height: 1.8rem;
 }
 
 .project-desc .tools{
@@ -241,9 +242,7 @@ section {
     .intro-mobile{
         display: block;
     }
-    
 }
-
 
 /* footer and others */
 footer{
