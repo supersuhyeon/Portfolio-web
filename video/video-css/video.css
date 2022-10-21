@@ -62,6 +62,23 @@ iframe{
     margin-bottom: 10px;
 }
 
+.contents-title.short-form p{
+    font-size: 18px;
+}
+
+.short-form-list{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.5em;
+}
+
+.short-form-content{
+    max-width: 100%;
+    margin: 5px;
+}
+
 .gallery{
     height: 100%;
     background-color: whitesmoke;
@@ -79,53 +96,22 @@ iframe{
 }
 
 .gallery-box{
-    height: 350px;
+    height: 100%;
     position: relative;
-    margin-top: 15px;
 }
 
 .gallery-box .swiper-container {
-    width: 1000px;
+    max-width: 1000px;
     height: 100%;
-    /* background-color: yellow; */
-    position: absolute;
-    left: 50%;
-    margin-left: -500px;
+    margin: auto;
     overflow: hidden;
-    padding: 0 1em;
-}
-
-.gallery-box .swiper-prev,
-.gallery-box .swiper-next {
-    width: 42px;
-    height: 42px;
-    border: 2px solid #333;
-    border-radius: 50%;
-    position: absolute;
-    top: 150px;
-    z-index: 1;
-    cursor: pointer;
-    outline: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.2s;
+    padding: 2em 1em;
 }
 
 .gallery-box .swiper-prev:hover,
 .gallery-box .swiper-next:hover {
     background-color: #333;
     color: #fff;
-}
-
-.gallery-box .swiper-prev{
-    left: 50%;
-    margin-left: -480px;
-}
-
-.gallery-box .swiper-next{
-    right: 50%;
-    margin-right: -480px;
 }
 
 footer{
