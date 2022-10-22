@@ -262,17 +262,18 @@ transform: scale(1.1);
     box-sizing: border-box;
 }
 
-.p-title{
+.text-container .p-title{
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
-.p-description{
+.text-container .p-description{
     margin-bottom: 1rem;
 }
 
-.p-tool{
-    margin-bottom: 1rem;
+.text-container .p-tool p{ 
+    margin-top: 1rem;
+	/* font-weight: bold; */
 }
 
 .project.website{

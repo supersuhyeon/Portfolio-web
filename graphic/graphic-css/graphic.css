@@ -140,6 +140,10 @@
     overflow-y: hidden;
 }
 
+footer{
+    margin-top: 0;
+}
+
 @media screen and (max-width: 768px){
     .modalbox {
         width: 100%;
