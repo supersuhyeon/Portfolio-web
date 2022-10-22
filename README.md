@@ -20,8 +20,8 @@ I learned about scroll interactions in one of my projects called 'Airmug pro' an
 4. In the current scroll section, the start and end points to run the animation are obtained as ratios.
 5. Assign the ratio to the animation property.<br>
 
-**2. All different projects**
-![ezgif com-gif-maker (18)](https://user-images.githubusercontent.com/94214512/197362423-b678db0d-3fc3-4189-83bf-25b0720d2dda.gif)
+**2. All different projects** <br>
+![ezgif com-gif-maker (18)](https://user-images.githubusercontent.com/94214512/197362423-b678db0d-3fc3-4189-83bf-25b0720d2dda.gif)<br>
 you can view all the different projects using a desktop, tablet or mobile device! <br>
 When I started learning Javascript a few months ago using Swiperjs while making a website,
 I couldn't code to make swiper slide responsively so I used to make two exactly identical swiper slides, one for desktop and one for mobile. After figuring it out, I know now to create a function, customize Swiperjs options and resize the eventlistener.
