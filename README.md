@@ -1,7 +1,7 @@
 ![ezgif com-gif-maker (19)](https://user-images.githubusercontent.com/94214512/197362775-0ad8da01-ff22-4b4c-9122-b7f64c4cea7a.gif)
 
 This is my personal website. You can check out my portfolio of projects like a responsive website, JavaScript mini-game, 2D graphics, and video contents that I made! All of them are responsive so you can browse with different devices<br>
-[suhyeonkim-website](https://moonlit-moxie-a93f38.netlify.app/)
+[suhyeonkim-website](https://suhyeonkim-portfolio.netlify.app/)
 
 ### Languages<br>
 
