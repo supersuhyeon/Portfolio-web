@@ -24,3 +24,14 @@ new Swiper(".mySwiper", {
         }
     })
   })
+
+  const loadImg = ()=>{
+    const preLoadImgSrc = ['./images/monsquadmodel.png', './images/daldaguri2.png', './images/cow2.png', './images/kloudslide.png', './images/thumnail.jpg']
+    preLoadImgSrc.forEach(arr=>{
+        const img = new Image();
+        img.src = arr;
+    })
+}
+
+
+loadImg()
