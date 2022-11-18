@@ -91,16 +91,18 @@ iframe{
 
 .short-form-list{
     display: flex;
-    align-items: flex-end;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2.5em;
+}
+
+.short-form-list.top{
+    margin-top: 2rem;
 }
 
 .short-form-content{
     max-width: 100%;
     margin: 5px;
 }
+
 
 .gallery{
     height: 100%;
