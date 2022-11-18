@@ -120,7 +120,7 @@ transform: scale(1.1);
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 1rem;
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	color: #fff;
 }
 
@@ -472,6 +472,11 @@ footer{
 	.mid-message.work{
 		margin-bottom: 8rem;
 	}
+
+	.desc-message {
+		font-size: 1.4rem;
+	}
+	
 
 	.desc-message.introduction{
 		margin-top: 8rem;
