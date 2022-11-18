@@ -267,23 +267,23 @@ footer{
 }
 
 #to-top{
-    width: 32px;
-    height: 32px;
-    background-color: #333;
-    color: white;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 70px;
-    right:30px;
-    z-index: 99;
-    visibility: hidden;
+	width: 42px;
+	height: 42px;
+	background-color: #333;
+	color: white;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 70px;
+	right:30px;
+	z-index: 99;
+	visibility: hidden;
 }
 
 .material-icons{
-	font-size: 18px;
+	font-size: 24px;
 }

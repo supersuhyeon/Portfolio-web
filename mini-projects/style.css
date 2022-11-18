@@ -72,8 +72,13 @@
     .project-flower-box-mobile{
         display: block;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         margin-top: 1em;
+        
+    }
+
+    .project-flower-box-mobile>a{
+        margin-right: 0.5em;
     }
 
     .link-web.mobile{
