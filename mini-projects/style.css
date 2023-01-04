@@ -1,6 +1,5 @@
 @charset 'utf-8';
 
-
 .project-desc .linkbox>img{
     margin-right: 10px;
 }
@@ -9,6 +8,39 @@
     margin-top: 1em;
 }
 
+.intro-imgboxes{
+    display: flex;
+}
+
+.introimgbox{
+    margin-right: 10px;
+    margin-top: 2rem;
+}
+
+.introimgbox:last-child{
+    margin-right: 0;
+}
+
+.main-message-js{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.intro-picture-js{
+    display: none;
+}
+
+.explore{
+    border-radius: 20px;
+    padding: 0.5rem;
+    display: block;
+    margin: 3rem auto 1rem;
+    font-size: 1.2rem;
+}
+
+.main-sns{
+    display: none;
+}
 
 /* project - flowergarden */
 
@@ -61,6 +93,25 @@
 }
 
 @media screen and (max-width: 768px){
+
+    .intro-imgboxes{
+        display: none;
+    }
+
+    .intro-picture-js{
+        display: block;
+    }
+
+    .main-sns{
+        display: flex;
+    }
+
+    .main-message-js{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        text-align: start;
+    }
+
     .project-flower-box{
         display: none;
     }
