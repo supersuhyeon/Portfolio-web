@@ -16,6 +16,8 @@
 				messageB: document.querySelector('#scroll-section-0 .main-message.b'),
 				pencilLogo: document.querySelector('#scroll-section-0 .pencil-logo'),
 				pencil: document.querySelector('#scroll-section-0 .pencil'),
+				ruler: document.querySelector('#scroll-section-0 .ruler'),
+				eraser: document.querySelector('#scroll-section-0 .eraser'),
 				ribbonPath: document.querySelector('.ribbon-path path')
 			},
 			values: {
@@ -30,9 +32,19 @@
 				pencilLogo_translateX_in: [-10, -20, { start: 0.2, end: 0.4 }],
 				pencilLogo_translateX_out: [-20, -50, { start: 0.4, end: 0.8 }],
 				pencilLogo_opacity_out: [1, 0, { start: 0.8, end: 0.9 }],
+
 				pencil_right: [-10, 70, { start: 0.3, end: 0.8 }],
 				pencil_bottom: [-80, 100, { start: 0.3, end: 0.8 }],
 				pencil_rotate: [-120, -200, { start: 0.3, end: 0.8 }],
+
+				ruler_right: [-10, 100, { start: 0.3, end: 0.8 }],
+				ruler_bottom: [-80, 130, { start: 0.3, end: 0.8 }],
+				ruler_rotate: [-100, -180, { start: 0.3, end: 0.8 }],
+
+				eraser_right: [-20, 100, { start: 0.3, end: 0.8 }],
+				eraser_bottom: [-160, 120, { start: 0.3, end: 0.8 }],
+				eraser_rotate: [-100, -10, { start: 0.3, end: 0.8 }],
+
 				path_dashoffset_in: [1401, 0, { start: 0.2, end: 0.4 }],
 				path_dashoffset_out: [0, -1401, { start: 0.6, end: 0.8 }]
 			}
@@ -144,6 +156,14 @@
 				objs.pencil.style.right = `${calcValues(values.pencil_right, currentYOffset)}%`;
 				objs.pencil.style.bottom = `${calcValues(values.pencil_bottom, currentYOffset)}%`;
 				objs.pencil.style.transform = `rotate(${calcValues(values.pencil_rotate, currentYOffset)}deg)`;
+
+				objs.ruler.style.right = `${calcValues(values.ruler_right, currentYOffset)}%`;
+				objs.ruler.style.bottom = `${calcValues(values.ruler_bottom, currentYOffset)}%`;
+				objs.ruler.style.transform = `rotate(${calcValues(values.ruler_rotate, currentYOffset)}deg)`;
+
+				objs.eraser.style.right = `${calcValues(values.eraser_right, currentYOffset)}%`;
+				objs.eraser.style.bottom = `${calcValues(values.eraser_bottom, currentYOffset)}%`;
+				objs.eraser.style.transform = `rotate(${calcValues(values.eraser_rotate, currentYOffset)}deg)`;
 
 				break;	
 		}

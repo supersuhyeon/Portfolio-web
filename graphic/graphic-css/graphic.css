@@ -126,10 +126,12 @@
 }
 
 .weblink{
-   border: 1px solid black;
-   padding: 3px;
+   padding: 10px;
    box-sizing: border-box;
    margin-top: 10px;
+   cursor: pointer;
+   background-color: var(--accent-color);
+   border-radius: 10px;
 }
 
 .hidden{

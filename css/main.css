@@ -1,14 +1,16 @@
 @charset 'utf-8';
 
 html {
-	font-family: 'Noto Sans KR', sans-serif;
+	font-family: 'Proxima Nova', Georgia, sans-serif;
+	/* font-family: 'Noto Sans KR', sans-serif; */
 	font-size: 14px;
 }
 body {
 	overflow-x: hidden;
 	color: rgb(29, 29, 31);
 	letter-spacing: -0.05em;
-	background: darkblue;
+	background-color: #0d192e;
+	letter-spacing: 1px;
 }
 p {
 	line-height: 1.6;
@@ -50,7 +52,7 @@ a {
 }
 
 .local-nav-links a:hover{
-color: #ea5514;
+color: #8cead2;
 transform: scale(1.1);
 }
 
@@ -86,11 +88,13 @@ transform: scale(1.1);
 	z-index: 5;
 	font-size: 3.5rem;
 	text-align: center;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 .main-message {
 	top: 40vh;
 	font-size: 2.5rem;
 	opacity: 0;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 .main-message.b {
 	font-size: 3.5rem;
@@ -122,6 +126,7 @@ transform: scale(1.1);
 	padding: 0 1rem;
 	font-size: 1.2rem;
 	color: #fff;
+	letter-spacing: normal;
 }
 
 .desc-message.introduction{
@@ -207,6 +212,24 @@ transform: scale(1.1);
 	transform: rotate(-120deg);
 }
 
+.ruler {
+	left: auto;
+	top: auto;
+	right: -20%;
+	bottom: -70%;
+	width: 25vw;
+	transform: rotate(-170deg);
+}
+
+.eraser {
+	left: auto;
+	top: auto;
+	right: -30%;
+	bottom: -60%;
+	width: 18vw;
+	transform: rotate(-180deg);
+}
+
 .ribbon-path {
 	left: 50%;
 	top: 50%;
@@ -216,7 +239,7 @@ transform: scale(1.1);
 
 .ribbon-path path {
 	fill: none;
-	stroke: darkblue;
+	stroke: #0d192e;
 	stroke-width: 62;
 	stroke-linecap: round;
 	stroke-linejoin: round;
@@ -233,6 +256,10 @@ transform: scale(1.1);
 
 .normal-content.contact{
 	margin-bottom: 8em;
+}
+
+.mid-message{
+	font-family: 'proxima_nova_altbold', Georgia, sans-serif;
 }
 
 .mid-message.introduction,
@@ -277,11 +304,10 @@ transform: scale(1.1);
 
 .text-container .p-tool p{ 
     margin-top: 1rem;
-	/* font-weight: bold; */
 }
 
 .project.website{
-    background: url('/images/project-website.png');
+    background: url('/websites/images/lulu.jpg');
     background-size: cover;
 }
 
@@ -335,19 +361,18 @@ transform: scale(1.1);
 .blog-container .b-semi-message{
 	font-size: 2rem;
 	text-align: center;
-	font-weight: bold;
+	font-family: 'proxima_nova_altbold';
 }
 
 .blog-container .b-desc-message{
 	font-size: 1.5rem;
 	margin-bottom: 2rem;
 	text-align: center;
-	
 }
 
 .blog-container .blogbox{
 	padding: 28px;
-	background-color: #00005B;
+	background-color: #15223e;
 	margin-top: 20px;
 	cursor: pointer;
 	transition: 0.2s;
@@ -368,22 +393,22 @@ transform: scale(1.1);
 }
 
 .blog-container .blogbox:hover .material-icons{
-	color: #ea5514;
+	color: #8cead2;
 }
 
 .blog-container .blogbox .b-date{
 	font-size: 0.8rem;
 }
 
+.blog-container .blogbox .b-description{
+	letter-spacing: normal;
+}
+
 .blog-container .blogbox .b-title{
 	font-size: 1.3rem;
 	font-weight: bold; 
 	margin-bottom: 6px;
-}
-
-.blog-container .blogbox .b-lang{
-	box-sizing: border-box;
-	padding: 3rem 0 0;
+	color: #8cead2;
 }
 
 .blog-container .blog-extra-wrapper{
@@ -406,7 +431,7 @@ transform: scale(1.1);
 }
 
 .blog-container .viewmore:hover{
-	color: #ea5514;
+	color: #8cead2;
 }
 
 footer{
@@ -441,13 +466,9 @@ footer{
 }
 
 .desc-message>a{
-	color: #ea5514;
+	color: #8cead2;
 	font-size: 14px;
 	margin-right: 15px;
-}
-
-.desc-message>a:hover{
-	color: white;
 }
 
 

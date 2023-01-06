@@ -1,15 +1,23 @@
 @charset 'utf-8';
 
+:root{
+    /* color */
+    --bg-color : #fff;
+    --accent-color : #8cead2;
+    --font-color:#000;
+    --font-light-color:#ddd;
+}
+
 html {
-	font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
 	font-size: 14px;
 }
 body {
 	overflow-x: hidden;
-	color: rgb(29, 29, 31);
-	letter-spacing: -0.05em;
-	background: white;
+    color: var(--font-color);
+	background: var(--bg-color);
     padding-top: 52px;
+    letter-spacing: 1px;
 }
 
 .marginarea{
@@ -22,19 +30,22 @@ p {
 	line-height: 1.6;
 }
 a {
-	color: rgb(29, 29, 31);
+    color: var(--font-color);
 	text-decoration: none;
 }
 
 button {
-    border: 1px solid #333;
-    color: black;
+    color: var(--font-color);
+    background-color: #8cead2;
     transition: 0.2s;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 button:hover {
- background-color: darkblue;
- color: white;
+    background-color: var(--accent-color); 
+    color:var(--font-color)
 }
 
 
@@ -58,17 +69,13 @@ button:hover {
 }
 
 .local-nav-links a{
-    color: black;
-}
-
-.local-nav-links a{
-    color: black;
+    color: var(--font-color);
     transition: 0.2s;
 }
 
 .local-nav-links a:hover{
-color: darkblue;
-transform: scale(1.1);
+    color: var(--accent-color);
+    transform: scale(1.1);
 }
 
 .local-nav-links{
@@ -99,9 +106,13 @@ section {
 }
 
 .responsive{
+    display: inline-block;
+    font-size: 0.8rem;
+    font-family: 'Proxima Nova';
     border-radius: 10px;
-    background-color: darkblue;
-    color: #fff;
+    background-color: var(--accent-color);
+    color: var(--font-color);
+    padding: 8px;
 }
 
 .project {
@@ -116,6 +127,7 @@ section {
 
 .project-title{
     font-size: 2.5rem;
+    font-family: 'proxima_nova_altbold';
 }
 
 .project-desc{
@@ -190,50 +202,39 @@ section {
 
 .intro h1{
     font-size: 5rem;
+    font-family: 'proxima_nova_altbold';
 }
 
-.main-message{
-    font-size: 2.5rem;
+.intro-textboxes-mobile{
+    display: none;
+}
+
+.intro-imgboxes{
+    display: flex;
+}
+
+.introimgbox{
+    margin-right: 10px;
     margin-top: 2rem;
 }
 
-.main-sns{
-    padding: 3rem 0 1rem 0;
-    display: flex;
-    align-items: center;
+.introimgbox:last-child{
+    margin-right: 0;
 }
 
-.main-sns .sns-left{
-    display: flex;
+.main-message-js{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-.main-sns img{
-    margin-right: 0.6rem;
-    display: block;
-}
-
-.main-sns .resumelink{
-    border: 1px solid black;
-    padding: 0 8px;
-    transition: 0.2s;
-}
-
-.main-sns .resumelink:hover{
-    background-color: darkblue;
-    color: white;
-}
-
-.intro .main-sns .main-email{
-    margin-left: auto;
-}
-
-.intro-picture{
-    width: 100%;
-    height: 100%;
-}
-
-.intro-mobile{
+.intro-picture-js{
     display: none;
+}
+
+.explore{
+    display: block;
+    margin: 3rem auto 1rem;
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width: 768px){
@@ -241,29 +242,55 @@ section {
         font-size: 2.5rem;
     }
 
-    .main-message{
-        font-size: 1.5rem;
+    .intro-textboxes-mobile{
+        display: block;
         margin-top: 2rem;
+        font-size: 1.2rem;
     }
 
-    .intro-web{
+    .intro-textboxes-mobile li{
+       margin-bottom: 10px;
+       cursor: pointer;
+    }
+
+    .intro-textboxes-mobile li:hover a{
+        color: var(--accent-color);
+     }
+
+    .intro-imgboxes{
         display: none;
     }
 
-    .intro-mobile{
+    .intro-picture-js{
         display: block;
+    }
+
+    .intro .main-sns{
+        display: flex;
+    }
+
+    .main-message-js{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        text-align: start;
+    }
+
+    .explore{
+        display: none;
     }
 }
 
 /* footer and others */
 footer{
 	border-top: 1px solid black;
-	color: black;
+	color: var(--font-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 52px;
-    margin-top: 10em;
+	/* height: 80px; */
+    margin-top: 15em;
+    padding: 10px;
+    font-family: 'proxima_nova_ltsemibold'
 }
 
 #to-top{

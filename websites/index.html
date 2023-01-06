@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="/css/default.css">
     <link rel="stylesheet" href="./wesbite-css/style.css">
     <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/fonts/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/fonts/fonts.min.css" />
     <title>Work-Websites</title>
      <!-- gsap & scroll to plugin -->
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -24,7 +26,7 @@
 			<div class="local-nav-links">
 				<a href="/index.html" class="my-name">Suhyeon Kim</a>
                 <a href="/websites/index.html">Websites</a>
-				<a href="/mini-projects/index.html">JS Projects</a>
+				<a href="/mini-projects/index.html">JS Games</a>
 				<a href="/graphic/index.html">2D Graphics</a>
 				<a href="/video/index.html">Video</a>
 			</div>
@@ -32,71 +34,127 @@
 
         <section class="intro marginarea">
             <div class="intro-wrapper">
-                <h1><strong>Responsive<br>Website</strong></h1>
-                <p class="main-message">I enjoy tackling interesting problems,<br>
-                    if it can help users navigate the web and technology.</p>
-                <div class="main-sns">
-                    <div class="sns-left">
-                        <a href="https://github.com/supersuhyeon"><img src="./images/githubicon.svg" alt=""></a>
-                        <a href="https://www.linkedin.com/in/suhyeon-kim-page/"><img src="/images/linkedin.svg" alt=""></a>
-                        <a class="resumelink" href="/SuhyeonKimResume.pdf" download><p class="resume">Resume</p></a>
-                    </div>
-                    <p class="main-email">suhyeonkr@gmail.com</p>
-                </div>
-            <img class="intro-picture intro-web" src="./images/websites-intro.png" alt="">
-              <img class="intro-picture intro-mobile" src="./images/photointroweb.png" alt="">
+                <h1><strong>Responsive <br> Websites</strong></h1>
+
+                <ul class="intro-textboxes-mobile">
+                    <li> <a href="#project1">- lulu</a>  </li>
+                    <li> <a href="#project2">- youtube clone</a>  </li>
+                    <li> <a href="#project3">- airmug pro</a>  </li>
+                    <li> <a href="#project4">- monsquad</a>  </li>
+                </ul>
+             
+                <ul class="intro-imgboxes">
+                    <li class="introimgbox">
+                        <a href="#project1">
+                            <img src="./images/lulu.jpg" alt="">
+                            <p>2022.12</p>
+                            <p>lulu online shop</p>
+                            <p>React Tailwindcss Firebase</p>
+                        </a>
+                     </li>
+                     <li class="introimgbox">
+                        <a href="#project2">
+                            <img src="./images/youtubeclone.jpg" alt="">
+                            <p>2022.11</p>
+                            <p>youtube clone</p>
+                            <p>React Tailwindcss</p>
+                        </a>
+                     </li>
+
+                    <li class="introimgbox">
+                        <a href="#project3">
+                            <img src="./images/AirmugPro.jpg" alt="">
+                            <p>2022.09</p>
+                            <p>airmug pro</p>
+                            <p>html css javascript Canvas</p>
+                        </a>
+                     </li>
+                    <li class="introimgbox">
+                       <a href="#project4">
+                        <img src="./images/Monsquad2.jpg" alt="">
+                        <p>2022.07</p>
+                        <p>monsquad</p>
+                        <p>html css javascript</p>
+                       </a>
+                    </li>
+                </ul>
+
+                <button class="explore">explore more</button>
+
+                <p class="main-message-js">
+                    I enjoy tackling interesting problems,if it can help users navigate the web and technology.
+                    I constantly think about re-usability and performance improvements through refactoring.
+                </p>
                
             </div>
         </section>
 
-
-        <section class="project monsquad marginarea">
+        <section class="project marginarea" id="project1">
+            
             <div class="project-title">
-                <button class="responsive">Jun 2022</button>
-                <button class="responsive">Responsive</button>
-                <h2>Monsquad</h2>
+                <p class="responsive">Dec 2022</p>
+                <p class="responsive">Responsive</p>
+                <h2>lulu</h2>
             </div>
 
-            <img class="monsquad-main" src="./images/websites-intro.png" alt="">
-            <div class="project-photo-box">
-                <img class="project-photo monsquad-moodboard" src="./images/monsquad-mood-board.png" alt="">
-                <img class="project-photo monsquad" src="./images/monsquad-mobile.gif">
-            </div>
+            <a href="https://neon-tapioca-b9932a.netlify.app/"><img class="project-photo" src="./images/lulu-description.jpg" alt=""></a>
+
             <div class="project-desc">
                 <p class="overview">Overview</p>
-                <span class="description">
-                    This is a fictional brand.<br>
-                    Monsquad means a team of monster villains who love skateboarding. It is a portmanteau of ‘monster’ and ‘squad.’<br>
-                    The brand reflects the street and skateboarding cultures of teenagers. <br>
-                    Their free-spirited and rebellious nature manifests itself in the form of monsters.<br>
-                    <br>
-                    As my first personal responsive brand website, I planned, designed, and then constructed the branding from scratch <br>
-                    while ensuring the pieces fit together harmoniously. 
-                
+                <span class="description">Killing Monsters is a JavaScript mini-game that I made using arrays, objects, and for loops. <br>
+                    This game focuses on user interaction by implementing various situations such as various motions of the character based on the keyboard key codes,
+                    leveling up, collisions with the monsters, conversations with the NPCs, and quest rewards.<br>
                 </span>
-                <span class="tools">VScode &nbsp;&nbsp; HTML &nbsp;&nbsp; CSS &nbsp;&nbsp; Javascript</span>
+                    <span class="tools">VScode &nbsp;&nbsp; React &nbsp;&nbsp; Tailwindcss &nbsp;&nbsp; Firebase</span>
                 <div class="linkbox">
-                    <a href="https://github.com/supersuhyeon/Monsquad-Project" target="_blank">
-                    <img src="./images/githubicon.svg" alt="">
+                    <a href="https://github.com/supersuhyeon/React-online-clothing-shop">
+                    <img src="../websites/images/githubicon.svg" alt="">
                     </a>
-                    <a href="https://dashing-sawine-e8332f.netlify.app/" target="_blank">
-                        <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                    <a href="https://cozy-tartufo-7aa58d.netlify.app/">
+                    <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
                     </a>
                 </div>
             </div>
         </section>
 
-
-        <section class="project airmug marginarea">
+        <section class="project marginarea" id="project2">
             
             <div class="project-title">
-                <button class="responsive">Sept 2022</button>
-                <button class="responsive">Responsive</button>
+                <p class="responsive">Oct 2022</p>
+                <p class="responsive">Responsive</p>
+                <h2>youtube clone</h2>
+            </div>
+
+            <a href="https://neon-tapioca-b9932a.netlify.app/"><img class="project-photo" src="./images/youtubeclone-description.jpg" alt=""></a>
+
+            <div class="project-desc">
+                <p class="overview">Overview</p>
+                <span class="description">Killing Monsters is a JavaScript mini-game that I made using arrays, objects, and for loops. <br>
+                    This game focuses on user interaction by implementing various situations such as various motions of the character based on the keyboard key codes,
+                    leveling up, collisions with the monsters, conversations with the NPCs, and quest rewards.<br>
+                </span>
+                <span class="tools">VScode &nbsp;&nbsp; React &nbsp;&nbsp; Tailwindcss</span>
+                <div class="linkbox">
+                    <a href="https://github.com/supersuhyeon/React-Youtube-Clone">
+                    <img src="../websites/images/githubicon.svg" alt="">
+                    </a>
+                    <a href="https://darling-cheesecake-c962f9.netlify.app/">
+                    <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="project marginarea" id="project3">
+            
+            <div class="project-title">
+                <p class="responsive">Sept 2022</p>
+                <p class="responsive">Responsive</p>
                 <h2>Airmug-Pro</h2>
             </div>
 
             <div class="project-photo-box">
-            <img class="project-photo airmug" src="./images/airmugphoto2.png" alt="">
+            <img class="project-photo airmug" src="./images/airmug-side.jpg" alt="">
             <img class="project-photo airmugpro-mobile" src="./images/airmug-mobile-gif.gif">
           </div>
             <div class="project-desc">
@@ -126,36 +184,40 @@
         </section>
 
 
-        <section class="project yg-renewal marginarea">
+        <section class="project monsquad marginarea" id="project4">
             <div class="project-title">
-                <button class="responsive">May 2022</button>
-                <h2>YG-Entertainment</h2>
+                <p class="responsive">Jun 2022</p>
+                <p class="responsive">Responsive</p>
+                <h2>Monsquad</h2>
             </div>
-            <img class="project-photo yg-photo" src="./images/ygphoto.png" alt="">
+
+                <img class="project-photo" src="./images/Monsquad-description2.jpg" alt="">
+
             <div class="project-desc">
                 <p class="overview">Overview</p>
                 <span class="description">
-                    YG entertainment is a top Korean entertainment company leading the K-pop culture wave with <br> artists such as Black Pink and Big Bang.<br> 
-                    <br> 
-                    The YG renewal website focuses on intuitiveness, conciseness, convenience, and usability.<br> 
-                    By excluding unnecessary elements of the existing YG website and focusing on the needs of visitors,<br> 
-                    it aims to effectively convey the information users need.<br> 
-                    <br> 
-                    Additionally, the website has been reconstructed in a thoughtful layout <br>
-                    so that YG’s various external brands and services can be quickly recognized.<br>
-                    Convenience and usability have been improved for visitors to avoid distractions.<br>
+                    This is a fictional brand.<br>
+                    Monsquad means a team of monster villains who love skateboarding. It is a portmanteau of ‘monster’ and ‘squad.’<br>
+                    The brand reflects the street and skateboarding cultures of teenagers. <br>
+                    Their free-spirited and rebellious nature manifests itself in the form of monsters.<br>
+                    <br>
+                    As my first personal responsive brand website, I planned, designed, and then constructed the branding from scratch <br>
+                    while ensuring the pieces fit together harmoniously. 
+                
                 </span>
-                <span class="tools">VScode &nbsp;&nbsp; HTML &nbsp;&nbsp; CSS &nbsp;&nbsp; Javascript &nbsp;&nbsp; Jquery</span>
+                <span class="tools">VScode &nbsp;&nbsp; HTML &nbsp;&nbsp; CSS &nbsp;&nbsp; Javascript</span>
                 <div class="linkbox">
-                    <a href="https://github.com/supersuhyeon/YG-PROJECT" target="_blank">
-                    <img src="./images/githubicon.svg" alt=""></a>
-                    <a href="https://profound-cocada-ee9eae.netlify.app/" target="_blank">
-                    <!-- <p class="material-icons">open_in_new</p> -->
-                    <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
-                </a> 
+                    <a href="https://github.com/supersuhyeon/Monsquad-Project" target="_blank">
+                    <img src="./images/githubicon.svg" alt="">
+                    </a>
+                    <a href="https://dashing-sawine-e8332f.netlify.app/" target="_blank">
+                        <i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
                 </div>
             </div>
         </section>
+            
+
 
     </div>
 
