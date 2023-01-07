@@ -1,15 +1,10 @@
 @charset 'utf-8';
 
-html {
-	font-family: 'Proxima Nova', Georgia, sans-serif;
-	/* font-family: 'Noto Sans KR', sans-serif; */
-	font-size: 14px;
-}
 body {
 	overflow-x: hidden;
 	color: rgb(29, 29, 31);
 	letter-spacing: -0.05em;
-	background-color: #0d192e;
+	background-color: var(--bg-home-color);
 	letter-spacing: 1px;
 }
 p {
@@ -21,13 +16,12 @@ a {
 }
 
 .container {
-	/* iPhone 가로 스크롤 방지 */
 	overflow-x: hidden;
 }
 
 .local-nav{
     height: 52px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--border-gray-color);
     padding: 0 1rem;
     position: fixed;
     top: 0;
@@ -43,17 +37,13 @@ a {
 }
 
 .local-nav-links a{
-    color: #fff;
-}
-
-.local-nav-links a{
-    color: #fff;
+    color: var(--font-light-color);
     transition: 0.2s;
 }
 
 .local-nav-links a:hover{
-color: #8cead2;
-transform: scale(1.1);
+	color: var(--accent-color);
+	transform: scale(1.1);
 }
 
 .local-nav-links{
@@ -80,21 +70,21 @@ transform: scale(1.1);
 .scroll-section {
 	position: relative;
 	padding-top: 50vh;
-	color: white;
+	color: var(--font-light-color);
 }
 #scroll-section-0 h1 {
+	font-family: 'Noto Sans KR', sans-serif;
 	position: relative;
 	top: -10vh;
 	z-index: 5;
 	font-size: 3.5rem;
 	text-align: center;
-	font-family: 'Noto Sans KR', sans-serif;
 }
 .main-message {
+	font-family: 'Noto Sans KR', sans-serif;
 	top: 40vh;
 	font-size: 2.5rem;
 	opacity: 0;
-	font-family: 'Noto Sans KR', sans-serif;
 }
 .main-message.b {
 	font-size: 3.5rem;
@@ -117,7 +107,7 @@ transform: scale(1.1);
 	margin: 0 auto;
 	padding: 0 1rem;
 	font-size: 2.5rem;
-	color: #fff;
+	color: var(--font-light-color);
 }
 
 .desc-message {
@@ -125,7 +115,7 @@ transform: scale(1.1);
 	margin: 0 auto;
 	padding: 0 1rem;
 	font-size: 1.2rem;
-	color: #fff;
+	color: var(--font-light-color);
 	letter-spacing: normal;
 }
 
@@ -158,7 +148,7 @@ transform: scale(1.1);
 	bottom: 0;
 	left: 0;
 	z-index: 100;
-	background: white;
+	background: var(--bg-color);
 	opacity: 0;
 	transition: 0.5s;
 }
@@ -189,7 +179,6 @@ transform: scale(1.1);
 .loading-circle circle {
 	stroke: black;
 	stroke-width: 4;
-	/* getTotalLength()로 stroke의 길이를 얻어올 수 있음 */
 	stroke-dasharray: 157, 157;
 	stroke-dashoffset: 0;
 	fill: transparent;
@@ -239,7 +228,7 @@ transform: scale(1.1);
 
 .ribbon-path path {
 	fill: none;
-	stroke: #0d192e;
+	stroke: var(--bg-home-color);
 	stroke-width: 62;
 	stroke-linecap: round;
 	stroke-linejoin: round;
@@ -249,7 +238,6 @@ transform: scale(1.1);
 
 
 /* nomal content */
-
 .normal-content{
 	padding: 8rem 0;
 }
@@ -259,7 +247,7 @@ transform: scale(1.1);
 }
 
 .mid-message{
-	font-family: 'proxima_nova_altbold', Georgia, sans-serif;
+	font-family: 'proxima_nova_altbold', sans-serif;
 }
 
 .mid-message.introduction,
@@ -268,7 +256,6 @@ transform: scale(1.1);
 }
 
 /* project */
-
 .project-container{
 	padding: 0 1rem;
 }
@@ -285,12 +272,11 @@ transform: scale(1.1);
 	width: 100%;
 	height: 100%;
 	display: block;
-	color: #fff;
+	color: var(--font-light-color);
 }
 
 .text-container{
     padding: 2rem;
-    box-sizing: border-box;
 }
 
 .text-container .p-title{
@@ -328,7 +314,10 @@ transform: scale(1.1);
 
 .project:hover{
     transform: translateY(-5px);
-    color: #fff;
+}
+
+.project:hover a{
+	color: var(--font-color);
 }
 
 .project:hover .overlay{
@@ -351,10 +340,9 @@ transform: scale(1.1);
 }
 
 /* blog */
-
 .blog-container{
 	margin-top: 8rem;
-	color: #fff;
+	color: var(--font-light-color);
 	padding: 0 1rem;
 }
 
@@ -376,15 +364,17 @@ transform: scale(1.1);
 	margin-top: 20px;
 	cursor: pointer;
 	transition: 0.2s;
-
+	border: 1px solid #15223e;
+	box-sizing: border-box;
 }
 
 .blog-container .blogbox>a{
-	color: #fff;
+	color: var(--font-light-color);
 }
 
 .blog-container .blogbox:hover{
 	transform: translateY(-5px);
+	border: 1px solid var(--accent-color);
 }
 
 .blog-container .blogbox .material-icons{
@@ -393,7 +383,7 @@ transform: scale(1.1);
 }
 
 .blog-container .blogbox:hover .material-icons{
-	color: #8cead2;
+	color: var(--accent-color);
 }
 
 .blog-container .blogbox .b-date{
@@ -408,7 +398,7 @@ transform: scale(1.1);
 	font-size: 1.3rem;
 	font-weight: bold; 
 	margin-bottom: 6px;
-	color: #8cead2;
+	color: var(--accent-color);
 }
 
 .blog-container .blog-extra-wrapper{
@@ -419,24 +409,13 @@ transform: scale(1.1);
 	display: block;
 }
 
-.blog-container .viewmore{
-	border: 1px solid white;
-	display: block;
-	width: 100px;
-	margin: 0 auto;
-	padding: 10px;
-	text-align: center;
-	margin-top: 3rem;
-	cursor: pointer;
-}
-
-.blog-container .viewmore:hover{
-	color: #8cead2;
+.viewmore{
+	margin: 4em auto 0;
 }
 
 footer{
-	border-top: 1px solid #fff;
-	color: #fff;
+	border-top: 1px solid var(--border-gray-color);
+	color: var(--font-light-color);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -447,8 +426,8 @@ footer{
 	width: 42px;
 	height: 42px;
 	background-color: #333;
-	color: white;
-	border: 2px solid #fff;
+	color: var(--font-light-color);
+	border: 2px solid var(--border-gray-color);
 	border-radius: 50%;
 	cursor: pointer;
 	display: flex;
@@ -466,7 +445,7 @@ footer{
 }
 
 .desc-message>a{
-	color: #8cead2;
+	color: var(--accent-color);
 	font-size: 14px;
 	margin-right: 15px;
 }
@@ -498,7 +477,6 @@ footer{
 		font-size: 1.4rem;
 	}
 	
-
 	.desc-message.introduction{
 		margin-top: 8rem;
 	}

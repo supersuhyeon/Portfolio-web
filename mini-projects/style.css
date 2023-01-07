@@ -16,8 +16,6 @@
     margin-top: 1em;
 }
 
-/* project - flowergarden */
-
 .project-flower-box{
     display: flex;
     width: 972px;
@@ -31,7 +29,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
+    color: var(--font-light-color);
     padding: 2rem;
     box-sizing: border-box;
     margin-top: 1rem;
@@ -67,37 +65,27 @@
     display: block;
 }
 
-.killingmonster-logic{
-    width: 100%;
-    height: 300px;
-    background-color: pink;
-}
-
 @media screen and (max-width: 768px){
 
     .project-flower-box{
         display: none;
     }
 
-    .linkbox.web{
-        display: none;
-    }
-
     .project-flower-box-mobile{
-        display: block;
         display: flex;
-        flex-direction: row;
         margin-top: 1em;
-        
     }
 
     .project-flower-box-mobile>a{
         margin-right: 0.5em;
     }
 
+    .linkbox.web{
+        display: none;
+    }
+
     .link-web.mobile{
         padding: 0.5em;
-        margin-bottom: 1em;
     }
 }
 

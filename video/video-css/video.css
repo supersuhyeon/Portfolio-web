@@ -1,5 +1,3 @@
-
-
 .intro{
     margin-top: 15em;
 }
@@ -14,7 +12,7 @@
     margin-top: 2em;
     margin-bottom: 8em;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .swiper.mySwiper .swiper-slide{
@@ -33,20 +31,23 @@ iframe{
 
 .swiper.mySwiper .swiper-button-next,
 .swiper.mySwiper .swiper-button-prev{
-    color: white;
+    color: var(--font-light-color);
 }
 
 .latestcontents{
-    border-top: 3px solid black;
+    border-top: 2px solid black;
     margin-top: 10em;
 }
 
 .latestcontents .contents-title{
     font-size: 40px;
+    font-family: 'proxima_nova_altbold';
 }
 
 .latestcontents .contents-title p{
     margin-top: 1em;
+    font-size: 1.4rem;
+    font-family: 'Proxima Nova';
 }
 
 .contents-list {
@@ -55,7 +56,6 @@ iframe{
 }
 
 .contents-list .content-box{
-    /* background-color: yellow; */
     width: 330px;
     height: 100%;
     margin: 0 10px;
@@ -85,10 +85,6 @@ iframe{
     display: none;
 }
 
-.contents-title p{
-    font-size: 1.4rem;
-}
-
 .short-form-list{
     display: flex;
     justify-content: center;
@@ -113,12 +109,12 @@ iframe{
 
 .gallery .gallery-title p{
     font-size: 2em;
-    font-weight: bold;
+    font-family: 'proxima_nova_ltsemibold';
     padding-top: 1em;
 }
 
 .gallery .gallery-title span{
-    font-size: 1.4em;
+    font-size: 1.4rem;
     line-height: 1.6;
 }
 
@@ -138,7 +134,11 @@ iframe{
 .gallery-box .swiper-prev:hover,
 .gallery-box .swiper-next:hover {
     background-color: #333;
-    color: #fff;
+    color: var(--font-light-color);
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+    bottom: -5px;
 }
 
 footer{
@@ -164,14 +164,14 @@ footer{
         text-align: center;
         font-size: 1.5em;
     }
-
-    .latestcontents .contents-title{
-        font-size: 1.8em;
-    }
     
     .latestcontents{
         border-top: 0;
         margin-top: 10em;
+    }
+
+    .latestcontents .contents-title{
+        font-size: 1.8em;
     }
 
     .contents-title p{

@@ -1,9 +1,19 @@
 @charset 'utf-8';
+:root{
+    /* color */
+    --bg-color : #fff;
+	--bg-home-color : #0d192e;
+    --accent-color : #8cead2;
+    --font-color:#000;
+    --font-light-color:#fff;
+	--border-gray-color:#ddd;
+}
 
 html {
-	font-family: 'Apple SD Gothic Neo', 'Roboto', 'Noto Sans KR', 'NanumGothic', 'Malgun Gothic', sans-serif;
+	font-family: 'Proxima Nova', 'Apple SD Gothic Neo', 'Roboto', 'Noto Sans KR', sans-serif;
 	line-height: 1.2;
 	word-wrap: break-word;
+	font-size: 14px;
 }
 body {
 	-webkit-font-smoothing: antialiased;
@@ -34,10 +44,7 @@ div, span, article, section, header, footer, aside, p, ul, li, fieldset, legend,
 ol, ul, li {
 	list-style: none;
 }
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+
 img {
 	max-width: 100%;
 	height: auto;
@@ -45,6 +52,12 @@ img {
 }
 button {
 	border: 0;
-	background: transparent;
 	cursor: pointer;
+	color: var(--font-color);
+    background-color: var(--accent-color);
+    transition: 0.2s;
+    font-family: 'Proxima Nova', Georgia, sans-serif;
+    border-radius: 10px;
+    padding: 10px;
+	display: block;
 }

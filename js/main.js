@@ -8,7 +8,7 @@
 		{
 			// 0
 			type: 'sticky',
-			heightNum: 3, // 브라우저 높이의 5배로 scrollHeight 세팅
+			heightNum: 3, 
 			scrollHeight: 0,
 			objs: {
 				container: document.querySelector('#scroll-section-0'),
@@ -145,7 +145,7 @@
 					objs.pencilLogo.style.transform = `translate(${calcValues(values.pencilLogo_translateX_out, currentYOffset)}%, -50%)`;
 				}
 
-				// 빨간 리본 패스(줄 긋기)
+				// Ribbon path
 				if (scrollRatio <= 0.5) {
 					objs.ribbonPath.style.strokeDashoffset = calcValues(values.path_dashoffset_in, currentYOffset);
 				} else {
@@ -194,7 +194,6 @@
 
 		if (yOffset < prevScrollHeight) {
 			enterNewScene = true;
-			// 브라우저 바운스 효과로 인해 마이너스가 되는 것을 방지(모바일)
 			if (currentScene === 0) return;
 			currentScene--;
 			document.body.setAttribute('id', `show-scene-${currentScene}`);
