@@ -274,7 +274,7 @@
 		const mobileMenuItems = document.querySelectorAll('.menu-mobile div a')
 		mobileMenuItems.forEach((item)=>{
 			item.addEventListener('click',()=>{
-				//햄버거 메뉴 들어가야함.
+				//햄버거 메뉴 사라지기.
 				document.querySelector('.wrapper').classList.remove('active')
 			})
 		})
