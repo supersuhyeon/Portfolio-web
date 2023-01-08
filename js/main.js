@@ -234,22 +234,49 @@
            })
         })
 
-		const menuAbout = document.querySelector('.menu-about')
-		menuAbout.addEventListener('click', ()=>{
-			const moveToIntro = document.querySelector('#movetointro').offsetTop
-			window.scrollTo({top: moveToIntro, behavior:'smooth'})
+		const menuAbouts = document.querySelectorAll('.menu-about')
+		menuAbouts.forEach((menuAbout)=>{
+			menuAbout.addEventListener('click', ()=>{
+				const moveToIntro = document.querySelector('#movetointro').offsetTop
+				window.scrollTo({top: moveToIntro, behavior:'smooth'})
+			})
+		})
+		
+		const menuWorks = document.querySelectorAll('.menu-work')
+		menuWorks.forEach((menuWork)=>{
+			menuWork.addEventListener('click', ()=>{
+				const moveToWork = document.querySelector('#movetowork').offsetTop
+				window.scrollTo({top: moveToWork, behavior:'smooth'})
+			})
 		})
 
-		const menuWork = document.querySelector('.menu-work')
-		menuWork.addEventListener('click', ()=>{
-			const moveToWork = document.querySelector('#movetowork').offsetTop
-			window.scrollTo({top: moveToWork, behavior:'smooth'})
+		const menuContacts = document.querySelectorAll('.menu-contact')
+		menuContacts.forEach((menuContact)=>{
+			menuContact.addEventListener('click', ()=>{
+				const moveToContact = document.querySelector('#movetocontact').offsetTop
+				window.scrollTo({top: moveToContact, behavior:'smooth'})
+			})
 		})
 
-		const menuContact = document.querySelector('.menu-contact')
-		menuContact.addEventListener('click', ()=>{
-			const moveToContact = document.querySelector('#movetocontact').offsetTop
-			window.scrollTo({top: moveToContact, behavior:'smooth'})
+		const burgerCheck = document.querySelector('.burger-check')
+		
+		burgerCheck.addEventListener('click',()=>{
+			if(burgerCheck.checked){
+				document.body.classList.add('stop-scroll')
+				document.querySelector('.wrapper').classList.add('active')
+			}else{
+				document.body.classList.remove('stop-scroll')
+				document.querySelector('.wrapper').classList.remove('active')
+			}
+			
+		})
+
+		const mobileMenuItems = document.querySelectorAll('.menu-mobile div a')
+		mobileMenuItems.forEach((item)=>{
+			item.addEventListener('click',()=>{
+				//햄버거 메뉴 들어가야함.
+				document.querySelector('.wrapper').classList.remove('active')
+			})
 		})
 
 		const btnToggle = document.querySelector('.viewmore')
@@ -272,6 +299,7 @@
   				setLayout();
 			}
   		});
+
 
   		window.addEventListener('orientationchange', () => {
   			setTimeout(setLayout, 500);
