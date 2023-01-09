@@ -207,12 +207,19 @@ a {
   
   .burger-check:checked~.burger-icon .burger-sticks:before {
 	transform: rotate(-45deg);
-	background-color: var(--accent-color);
+	/* background-color: var(--accent-color); */
+	animation: blink 1s ease-in-out infinite;
   }
   
   .burger-check:checked~.burger-icon .burger-sticks:after {
 	transform: rotate(45deg);
-	background-color: var(--accent-color);
+	/* background-color: var(--accent-color); */
+	animation: blink 1s ease-in-out infinite;
+  }
+
+  @keyframes blink {
+	from {background-color: var(--accent-color);}
+	to{background-color: var(--font-light-color);}
   }
   
   .burger-check:checked~.burger-icon:not(.steps) .burger-sticks:before,
