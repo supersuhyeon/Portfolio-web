@@ -260,6 +260,7 @@
 
 		const burgerCheck = document.querySelector('.burger-check')
 		
+		
 		burgerCheck.addEventListener('click',()=>{
 			if(burgerCheck.checked){
 				document.body.classList.add('stop-scroll')
@@ -274,8 +275,9 @@
 		const mobileMenuItems = document.querySelectorAll('.menu-mobile div a')
 		mobileMenuItems.forEach((item)=>{
 			item.addEventListener('click',()=>{
-				//햄버거 메뉴 사라지기.
+				//클릭이되면 전체 영역 삭제
 				document.querySelector('.wrapper').classList.remove('active')
+				document.body.classList.remove('stop-scroll')
 			})
 		})
 

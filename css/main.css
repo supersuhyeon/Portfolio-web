@@ -200,7 +200,7 @@ a {
   .burger-check:checked~.menu-mobile {
 	max-width: 400px;
   }
-  
+
   .burger-check:checked~.burger-icon .burger-sticks {
 	background: transparent;
   }
