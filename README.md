@@ -1,4 +1,4 @@
-![ezgif com-gif-maker (19)](https://user-images.githubusercontent.com/94214512/197362775-0ad8da01-ff22-4b4c-9122-b7f64c4cea7a.gif)
+![ezgif com-gif-maker (59)](https://user-images.githubusercontent.com/94214512/211232506-edc1d2e2-31e3-4425-a682-606998f726c2.gif)
 
 This is my personal website. You can check out my portfolio of projects like a responsive website, JavaScript mini-game, 2D graphics, and video contents that I made! All of them are responsive so you can browse with different devices<br>
 [suhyeonkim-website](https://suhyeonkim-portfolio.netlify.app/)
@@ -10,7 +10,8 @@ HTML, CSS, and JavaScript
 ### Features
 
 **1. scroll interactiveness**<br>
-![ezgif com-gif-maker (17)](https://user-images.githubusercontent.com/94214512/197360932-0653730e-e738-4812-8af1-6425febe2bf2.gif) <br>
+![ezgif com-gif-maker (60)](https://user-images.githubusercontent.com/94214512/211232693-c6aa4577-3643-438b-bcbe-899ab37134a4.gif)
+<br>
 ![scroll01](https://user-images.githubusercontent.com/94214512/197361204-4f5aca06-dc76-4758-a213-c6ff03619b4b.png)<br>
 I learned about scroll interactions in one of my projects called 'Airmug pro' and applied that scroll concept to my portfolio website. <br>
 
@@ -21,7 +22,7 @@ I learned about scroll interactions in one of my projects called 'Airmug pro' an
 5. Assign the ratio to the animation property.<br>
 
 **2. All different projects** <br>
-![ezgif com-gif-maker (18)](https://user-images.githubusercontent.com/94214512/197362423-b678db0d-3fc3-4189-83bf-25b0720d2dda.gif)<br>
+![ezgif com-gif-maker (61)](https://user-images.githubusercontent.com/94214512/211232860-4080b9fe-7963-4a61-9e81-79d1b5a163d6.gif)<br>
 you can view all the different projects using a desktop, tablet or mobile device! <br>
 When I started learning Javascript a few months ago using Swiperjs while making a website,
 I couldn't code to make swiper slide responsively so I used to make two exactly identical swiper slides, one for desktop and one for mobile. After figuring it out, I know now to create a function, customize Swiperjs options and resize the eventlistener.
