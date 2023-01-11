@@ -301,10 +301,10 @@
 
 		projectRelocation.addEventListener('click', ()=>{
 			const UserAgent = navigator.userAgent;
-			if(UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/)!=null){
-				window.location.href = './mini-projects/index.html'
-			 }else{
+			if(!UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/)!=null){
 				window.location.href = './mini-web-project/index.html'
+			 }else{
+				window.location.href = './mini-projects/index.html'
 			 }
 		})
 
