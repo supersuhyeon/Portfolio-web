@@ -4,9 +4,171 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/fonts/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/fonts/fonts.min.css" />
+    <link rel="stylesheet" href="/mini-web-project/css/reset.css">
+    <link rel="stylesheet" href="/mini-web-project/css/style.css">
+    <script src="https://kit.fontawesome.com/abc7df92e1.js" crossorigin="anonymous"></script>
+    <script data-cfasync="false" src="/mini-web-project/js/form-submission-handler.js" defer></script>
+    <script src="/js/common.js" defer></script>
+    <script src="/mini-web-project/js/main.js" defer></script>
+    <title>JS Games</title>
+   
 </head>
 <body>
-   <p>web version</p>
+    <nav class="local-nav">
+        <div class="local-nav-links">
+            <a href="/index.html" class="my-name">Suhyeon Kim</a>
+            <a href="/websites/index.html">Websites</a>
+            <a class="nav-games">JS Games</a>
+            <a href="/graphic/index.html">2D Graphics</a>
+            <a href="/video/index.html">Video</a>
+        </div>
+    </nav>
+
+    <!-- sound -->
+    <div class="sound-box">
+        <button class="bgsound" type="button" onclick=play()>
+            <i class="fa-solid fa-circle-play"><audio id="audio1" src="/mini-web-project/sound/bgsound2.mp3"></audio></i>
+            
+        </button>
+        <button class="bgsound bgsound-stop">
+            <i class="fa-solid fa-circle-stop"></i>
+        </button>
+    </div>
+    
+    <!-- 이동 -->
+    <div class="hand">
+        <!-- 스케일 -->
+        <img src="/mini-web-project/images/hand.png" alt="hand">
+    </div>
+    <div class="leaflet">
+        <div class="page" data-page="1">
+            <!-- 앞면 -->
+            <div class="page-face cover-page">
+                <p class="main-text">It's time to play</p>
+                <img class="squid-img" src="/mini-web-project/images/squadgame.png" alt="">
+                <p class="semi-text">Click to play</p>
+            </div>
+            <!-- 뒷면 -->
+            <div class="page-face">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                            <figure class="menu-item-photo">
+                                <img src="/mini-web-project/images/killingmonster.gif" alt="">
+                            </figure>
+                            <div class="menu-item-info">
+                                <div class="item-info-box">
+                                    <p class="title">Overview</p>
+                                    <span class="description">Killing Monsters is a JavaScript mini-game that I made using arrays, objects, and for loops. <br>
+                                        This game focuses on user interaction by implementing various situations such as various motions of the character based on the keyboard key codes,
+                                        leveling up, collisions with the monsters, conversations with the NPCs, and quest rewards.<br>
+                                    </span>
+                                </div>
+                                <div class="item-info-box">
+                                    <p class="title">How to play</p>
+                                    <span class="description">The timer starts when the game starts and you have to hunt down all the monsters that appear randomly in each stage.<br>
+                                        If you clear the NPC's mission in the middle of the game, you will then be able to fight the Zombie King.<br>
+                                        The key to this game is how fast you are at using the keyboard controls and defeating all the monsters.<br>
+                                        If you finish the game within 50 seconds, you are in the top 1%.</span>
+                                </div>
+                                    <span class="tools">VScode &nbsp;&nbsp; HTML &nbsp;&nbsp; CSS &nbsp;&nbsp; Javascript</span>
+                                <div class="linkbox">
+                                    <a href="https://github.com/supersuhyeon/killing-monster">
+                                    <img src="/mini-web-project/images/githubicon.svg" alt="githubicon">
+                                    </a>
+                                    <a href="https://neon-tapioca-b9932a.netlify.app/">
+                                    <i style="font-size: 16px;" class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        <button class="back-btn">← back</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="page"  data-page="2">
+            <!-- 앞면 -->
+            <div class="page-face comingsoon">
+                <ul class="menu-list">
+                    <li style="color:white;" class="menu-item">
+                        <div class="menu-item-info comingsoon-wrapper">
+                            <h1 class="gform-main-title">Thank you for your patience!</h1>
+                            <p class="gform-desc">I've recently been working on a game using Three.js<br> inspired by Squid Game. 
+                                Please wait for this new challenge!
+                            </p>
+                            <p class="gform-notice">Get notified when it is ready!</p>
+                            <form class="gform" method="POST" data-email="suhyeonkr@gmail.com" action="https://script.google.com/macros/s/AKfycbwGNiUTv98-qxYw8ZoypvZHrfM57p8IG5j7otanN2MhuWgLRWbhNtO0dYJZZru5QuwM1Q/exec">
+                                <div class="form-elements">
+                                    <input id="email" name="email" placeholder="What's your email?" />
+                                  <button class="send-btn">Send</button>
+                                </div>
+                                    <div class="thankyou_message" style="display:none;">
+                                        <h2>Thanks for signing up! I will get back to you soon</h2>
+                                      </div>
+                            </form>
+                        </div>
+                        <button class="back-btn">← back</button>
+                    </li>
+                </ul>
+            </div>
+            <!-- 뒷면 -->
+            <div class="page-face">2B</div>
+        </div>
+        <div class="page"  data-page="3">
+            <!-- 앞면 -->
+            <div class="page-face cover-page">
+                <p>Are you ready?</p>
+            </div>
+            <!-- 뒷면 -->
+            <div class="page-face">
+                <ul class="menu-list">
+                    <li class="menu-item">
+                        <figure class="menu-item-photo">
+                            <img src="/mini-web-project/images/flowergame-description2.jpg" alt="">
+                        </figure>
+                        <div class="menu-item-info">
+                            <ul class="flower-wrapper">
+                                <li>
+                                    <img src="/mini-web-project/images/githubicon-white.svg" alt="">
+                                    <a href="https://github.com/supersuhyeon/PINK-FLOWER-PROJECT" target="_blank">Original version</a>
+                                </li>
+                                <li>
+                                    <img src="/mini-web-project/images/githubicon-white.svg" alt="">
+                                    <a href="https://github.com/supersuhyeon/PINK-FLOWER-REFACTORING" target="_blank">Refactored version<br>[performance improved]</a>
+                                </li>
+                            </ul>
+                            <div class="item-info-box">
+                                <p class="title">Overview</p>
+                                <span class="description">   This is a JavaScript mini-game made with browser DOM elements and APIs.<br>
+                                    The goal was to create a working game with DOM elements, <br>
+                                    but also one that performs well in the browser with modular JS and classes. <br>
+                                    I constantly dwelled on how to improve performance, continually coming back to the project and refactoring.<br>
+                                </span>
+                            </div>
+                            <div class="item-info-box">
+                                <p class="title">How to play</p>
+                                <span class="description">  You win when you click 10 pink flowers within 5 seconds. <br>
+                                    You lose when the time is over or click any other flowers.
+                                </span>
+                            </div>
+                                <span class="tools">VScode &nbsp;&nbsp; HTML &nbsp;&nbsp; CSS &nbsp;&nbsp; Javascript</span>
+                            <div class="linkbox">
+                                <a href="https://warm-granita-4598c8.netlify.app/">
+                                    <i style="font-size: 16px;" class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i>
+                                </a>
+                            </div>
+                     </div>
+                        <button class="back-btn">← back</button>
+                    </li>
+                </ul>
+                
+            </div>
+            
+        </div>
+        <button class="close-btn">
+            <i class="fa-solid fa-circle-xmark"></i>
+        </button>
+    </div>
 </body>
 </html>

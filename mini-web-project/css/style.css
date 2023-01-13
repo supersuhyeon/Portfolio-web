@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+@keyframes start-ani {
+    0% {
+        transform : translate(-100%,100%) rotate(-540deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(0);
+    }
+}
+
+html{
+    font-size: 14px;
+    font-family: 'Proxima Nova';
+}
+
+body{
+    perspective: 1500px;
+    /* background: rgb(0,24,41);
+    background: linear-gradient(90deg, rgba(0,24,41,1) 0%, rgba(0,34,51,1) 94%); */
+    background-image: url('/mini-web-project/images/wave-haikei2.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url('../images/tablewood.jpg'); */
+    /* background-size: auto 130px; */
+}
+
+/* local nav */
+.local-nav{
+    height: 52px;
+    /* border-bottom: 1px solid #ddd; */
+    padding: 0 1rem;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    /* background: rgba(255,255,255,0.1);
+   
+    -webkit-backdrop-filter: saturate(180%) blur(15px) ;
+    -moz-backdrop-filter: saturate(180%) blur(15px) ;
+    -o-backdrop-filter: saturate(180%) blur(15px) ;
+    backdrop-filter: saturate(180%) blur(15px); */
+
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 30px 0px inset, rgba(0, 0, 0, 0.15) 0px -26px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.local-nav.hidden{
+    display: none;
+}
+
+.local-nav-links a{
+    color: #ddd;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.local-nav-links a:hover{
+    color: #3fd1ac;
+    transform: scale(1.1);
+}
+
+.local-nav-links{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;   
+    height: 100%;
+    align-items: center;
+    
+}
+.my-name{
+    margin-right: auto;
+    font-size: 1rem;
+    font-weight:bold;
+    transition: 0.2s;
+}
+
+.local-nav-links a:not(.my-name){
+    margin-left: 2em;
+    font-size: 0.8em;
+    padding: 10px;
+}
+/* local nav end */
+
+.sound-box{
+    position: absolute;
+    z-index: 99;
+    left: 10px;
+    bottom: 10px;
+}
+
+.bgsound{
+    font-size: 2rem;
+    color: #8cead2;
+    width: 40px;
+    height: 40px;
+}
+
+.hand{
+    position: absolute;
+    width: 400px;
+    z-index: 10;
+    left: 70%;
+    top: 70%;
+}
+
+.hand img{
+    transition: 1s;
+    transform-origin: left top;
+}
+
+.zoom-in .hand img{
+    transform: scale(2);
+}
+
+.leaflet{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 25vw;
+    height: 30vw;
+    margin: auto;
+    transform-style: preserve-3d;
+    transition: 1s;
+    cursor: pointer;
+    animation: start-ani 1s forwards;
+}
+
+.page {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    transform-style: preserve-3d;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+
+}
+.page:nth-child(1){
+    transform-origin: left;
+    z-index: 2;
+}
+
+.page:nth-child(3){
+    transform-origin: right;
+    z-index: 1;
+}
+
+
+.page:nth-child(1).page-flipped {
+    transform: rotateY(-150deg);
+}
+
+.page:nth-child(3).page-flipped {
+    transform: rotateY(150deg);
+}
+
+.page:nth-child(1) .page-face:nth-child(2),
+/* .page:nth-child(2) .page-face:nth-child(1), */
+.page:nth-child(3) .page-face:nth-child(2) {
+    background: #fff;
+}
+
+.page-face{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/mini-web-project/images/blank-brown-paper-textured-wallpaper.jpg');
+    background-size: cover;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.page-face.comingsoon{
+    background-image: url('/mini-web-project/images/comingsoon2.png');
+    background-size: cover;
+}
+
+.page-face:hover .semi-text{
+    color: red;
+}
+
+.main-text{
+  font-size: 2rem;
+  font-family: 'Caveat', cursive;
+}
+
+.squid-img{
+    width: 12em;
+    padding: 2rem;
+}
+
+.semi-text{
+  font-size: 1.2rem;
+  font-family: 'proxima_nova_ltsemibold';
+}
+
+.page-face::-webkit-scrollbar {
+    width: 8px;  /* 스크롤바의 너비 */
+}
+
+.page-face::-webkit-scrollbar-thumb {
+    height: 10%; /* 스크롤바의 길이 */
+    background: #ededed; /* 스크롤바의 색상 */
+    border-radius: 10px;
+}
+
+.page-face::-webkit-scrollbar-track {
+    background: rgba(218, 221, 220, 0.1);
+}
+
+.page-face:nth-child(2){
+    transform: rotateY(180deg);
+}
+
+.cover-page::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 10px;
+    right: 3px;
+    top: 10px;
+    bottom: 10px;
+    border: 1px solid tan;
+}
+
+.cover-page{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.menu-list{
+    font-size: 0.7rem;
+    transform-style: preserve-3d;
+}
+.menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 2em;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.zoom-in .menu-item{
+    opacity: 0.2;
+}
+
+.zoom-in .menu-item.current-menu{
+    opacity: 1;
+}
+
+.back-btn{
+    position: absolute;
+    right: 12px;
+    top: 2px;
+    display: none;
+    color: red;
+    font-family: 'proxima_nova_ltsemibold';
+}
+
+.current-menu .back-btn {
+    display: inline-block;
+}
+
+.menu-item-photo{
+    max-width: 100%;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.menu-item-info .item-info-box{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.menu-item-info .item-info-box .title{
+    margin-bottom: 2px;
+    font-family: 'proxima_nova_ltsemibold';
+    font-size: 0.9rem;
+}
+
+.flower-wrapper{
+    display: flex;
+}
+.flower-wrapper li{
+   color: #fff;
+   border-radius: 3px;
+   margin-right: 2px;
+   flex: 1;
+   padding: 8px;
+   text-align: center;
+   background-image: url('/mini-web-project/images/bg1.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.flower-wrapper li a{
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+ }
+
+.flower-wrapper li:nth-child(2){
+    margin-right: 0;
+}
+
+.linkbox{
+   display: flex;
+   align-items: center;
+   margin-top: 5px;
+}
+
+.linkbox a{
+    color: black;
+    margin-right: 5px;
+}
+
+.close-btn{
+    display: none;
+    position: absolute;
+    top: -8%;
+    left: 47%;
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: rgba(0,0,0,0.3) 0 1px 0;
+    backface-visibility: hidden;
+}
+
+.leafelt-opened .close-btn{
+    display: inline-block;
+}
+
+.menu-item-info{
+    width: 100%;
+}
+
+.gform-main-title{
+    font-size: 1rem;
+}
+
+.comingsoon-wrapper{
+    margin-top: 130px;
+    text-align: center;
+}
+.gform-main-title{
+    margin-bottom: 10px;
+}
+.gform-desc{
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.send-btn{
+    color: black;
+    font-family: 'Proxima Nova';
+    font-size: 0.6rem;
+    background: #ddd;
+    padding: 10px;
+    cursor: pointer;
+    /* border-radius: 2px; */
+  }
+
+.gform-notice{
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+}
+
+#email{
+  width: 100%;
+  height: 30px;
+  /* border-radius: 2px; */
+  font-size: 0.6rem;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgba(57, 63, 84, 0.8);
+  border-style: none;
+  color: #BFD2FF;
+}
+
+#email::-webkit-input-placeholder{
+    color: #7881A1;
+}
+
+.form-elements{
+    display: flex;
+    width: 100%;
+}
+
+ .menu-item-info .gform .send-btn.disabled{
+  background-color: rgb(184, 184, 184);
+  color: rgb(93, 93, 93);
+  cursor: not-allowed;
+}
+
+.thankyou_message{
+    font-size: 0.6rem;
+}
