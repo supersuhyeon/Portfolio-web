@@ -1,11 +1,9 @@
 const myName = document.querySelector('.local-nav-links .my-name')
 myName.addEventListener('mouseover', ()=>{
-    console.log('hello')
     myName.innerText = '← Back to main'
 })
 
 myName.addEventListener('mouseout', ()=>{
-    console.log('hello')
     myName.innerText = 'Suhyeon Kim'
 })
 
@@ -52,7 +50,6 @@ toTopEl.addEventListener('click', ()=>{
 })
 
 const projectRelocation = document.querySelector('.nav-games')
-console.log(projectRelocation)
 
 projectRelocation.addEventListener('click', ()=>{
     // const UserAgent = navigator.userAgent;
@@ -70,3 +67,4 @@ projectRelocation.addEventListener('click', ()=>{
         window.location.href = '/mini-projects/index.html'
       }
 })
+
