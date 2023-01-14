@@ -300,20 +300,23 @@
 		console.log(projectRelocation)
 
 		projectRelocation.addEventListener('click', ()=>{
-			// const UserAgent = navigator.userAgent;
-			// if(UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/)!=null){
+
+			// if(!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
+
 			// 	window.location.href = './mini-web-project/index.html'
-			//  }else{
-			// 	window.location.href = './mini-projects/index.html'
-			//  }
-
-			if(!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
-
-				window.location.href = './mini-web-project/index.html'
 			  
-			  }else{
-				window.location.href = './mini-projects/index.html'
-			  }
+			//   }else{
+			// 	window.location.href = './mini-projects/index.html'
+			//   }
+
+			const screenWidth = screen.availWidth;
+
+			if(screenWidth > 993 && screenWidth < 1920){
+				window.location.href = '/mini-web-project/index.html'
+			}else{
+				window.location.href = '/mini-projects/index.html'
+			}
+
 		})
 
   		window.addEventListener('resize', () => {

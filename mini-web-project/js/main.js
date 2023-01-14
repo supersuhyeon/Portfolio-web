@@ -139,28 +139,21 @@
         targetPos.y = e.clientY - window.innerHeight * 0.7
     })
 
-    // window.addEventListener('resize', ()=>{
-    //     const ww = window.innerWidth
-
-    //     if(ww >= 1921){
-    //         window.location.href = '/mini-projects/index.html'
-    //     }
-    // })
-
-    window.onload = function(){
+    window.addEventListener('DOMContentLoaded', function(){
         checkScreenSize()
-    }
+        })
 
     window.onresize = function(){
         checkScreenSize()
     }
 
     function checkScreenSize(){
+        
         const screenWidth = screen.availWidth;
 
-        if(screenWidth >= 1921){
+        if(screenWidth >= 1920 || screenWidth < 992){
             window.location.href = '/mini-projects/index.html'
         }
     }
-
 })()
+
