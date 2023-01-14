@@ -67,9 +67,9 @@ projectRelocation.addEventListener('click', ()=>{
 //     checkScreenSize()
 //     })
 
-window.onresize = function(){
-    checkScreenSize()
-}
+// window.onresize = function(){
+//     checkScreenSize()
+// }
 
 function checkScreenSize(){
     
