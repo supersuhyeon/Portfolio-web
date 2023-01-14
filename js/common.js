@@ -75,7 +75,7 @@ function checkScreenSize(){
     
     const screenWidth = screen.availWidth;
 
-    if(screenWidth > 1023 && screenWidth < 1920){
+    if(screenWidth > 1024 && screenWidth < 1920){
         window.location.href = '/mini-web-project/index.html'
     }else{
         window.location.href = '/mini-projects/index.html'
