@@ -12,6 +12,7 @@
 html{
     font-size: 14px;
     font-family: 'Proxima Nova';
+    touch-action: pan-x pan-y;
 }
 
 body{
@@ -24,7 +25,6 @@ body{
     /* background-image: url('../images/tablewood.jpg'); */
     /* background-size: auto 130px; */
     overflow: hidden;
-    touch-action: pan-x pan-y;
 }
 
 /* local nav */
