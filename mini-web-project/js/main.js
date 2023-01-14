@@ -139,10 +139,10 @@
         targetPos.y = e.clientY - window.innerHeight * 0.7
     })
 
-    // window.addEventListener('resize', ()=>{
-    //     if(window.innerWidth < 769){
-    //         window.location.href = '/mini-projects/index.html'
-    //     }
-    // })
+    window.addEventListener('resize', ()=>{
+        if(window.innerWidth < 768 || window.innerWidth > 1900){
+            window.location.href = '/mini-projects/index.html'
+        }
+    })
 })()
 
