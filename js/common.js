@@ -56,36 +56,14 @@ projectRelocation.addEventListener('click', ()=>{
     if(!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
 
         const screenWidth = screen.availWidth
-        if(screenWidth > 1919){
+        if(screenWidth >= 1921){
             window.location.href = '/mini-projects/index.html'
         }else{
             window.location.href = '/mini-web-project/index.html'
         }
-        
-      
       }else{
         window.location.href = '/mini-projects/index.html'
       }
-
-    // checkScreenSize()
 })
 
-// window.addEventListener('DOMContentLoaded', function(){
-//     checkScreenSize()
-//     })
-
-// window.onresize = function(){
-//     checkScreenSize()
-// }
-
-// function checkScreenSize(){
-    
-//     const screenWidth = screen.availWidth;
-
-//     if(screenWidth > 1024 && screenWidth < 1920){
-//         window.location.href = '/mini-web-project/index.html'
-//     }else{
-//         window.location.href = '/mini-projects/index.html'
-//     }
-// }
 
