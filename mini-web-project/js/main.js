@@ -139,21 +139,12 @@
         targetPos.y = e.clientY - window.innerHeight * 0.7
     })
 
-    // window.addEventListener('DOMContentLoaded', function(){
-    //     checkScreenSize()
-    //     })
+    window.addEventListener('resize', ()=>{
+        const ww = window.innerWidth
+        if(ww > 1919){
+            window.location.href = '/mini-projects/index.html'
+        }
+    })
 
-    // window.onresize = function(){
-    //     checkScreenSize()
-    // }
-
-    // function checkScreenSize(){
-        
-    //     const screenWidth = screen.availWidth;
-
-    //     if(screenWidth >= 1920 && screenWidth < 1023){
-    //         window.location.href = '/mini-projects/index.html'
-    //     }
-    // }
 })()
 

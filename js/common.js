@@ -53,14 +53,21 @@ const projectRelocation = document.querySelector('.nav-games')
 
 projectRelocation.addEventListener('click', ()=>{
 
-    // if(!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
-    //     //pc일경우
-    //     window.location.href = '/mini-web-project/index.html'
+    if(!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
+
+        const screenWidth = screen.availWidth
+        if(screenWidth > 1919){
+            window.location.href = '/mini-projects/index.html'
+        }else{
+            window.location.href = '/mini-web-project/index.html'
+        }
+        
       
-    //   }else{
-    //     window.location.href = '/mini-projects/index.html'
-    //   }
-    checkScreenSize()
+      }else{
+        window.location.href = '/mini-projects/index.html'
+      }
+
+    // checkScreenSize()
 })
 
 // window.addEventListener('DOMContentLoaded', function(){
@@ -71,14 +78,14 @@ projectRelocation.addEventListener('click', ()=>{
 //     checkScreenSize()
 // }
 
-function checkScreenSize(){
+// function checkScreenSize(){
     
-    const screenWidth = screen.availWidth;
+//     const screenWidth = screen.availWidth;
 
-    if(screenWidth > 1024 && screenWidth < 1920){
-        window.location.href = '/mini-web-project/index.html'
-    }else{
-        window.location.href = '/mini-projects/index.html'
-    }
-}
+//     if(screenWidth > 1024 && screenWidth < 1920){
+//         window.location.href = '/mini-web-project/index.html'
+//     }else{
+//         window.location.href = '/mini-projects/index.html'
+//     }
+// }
 
