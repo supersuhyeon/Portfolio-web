@@ -145,5 +145,10 @@
             
         }
     })
-})()
 
+    if(navigator.maxTouchPoints > 0){
+        document.querySelector('.hand').style.display = 'none'
+    }else{
+        document.querySelector('.hand').style.display = 'block'
+    }
+})()
