@@ -151,7 +151,7 @@
         
         const screenWidth = screen.availWidth;
 
-        if(screenWidth >= 1920 || screenWidth < 992){
+        if(screenWidth >= 1920 || screenWidth < 1023){
             window.location.href = '/mini-projects/index.html'
         }
     }
