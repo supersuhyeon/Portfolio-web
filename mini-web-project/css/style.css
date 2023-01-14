@@ -12,7 +12,6 @@
 html{
     font-size: 14px;
     font-family: 'Proxima Nova';
-    touch-action: pan-x pan-y;
 }
 
 body{
@@ -121,7 +120,6 @@ body{
     transition: 1s;
     cursor: pointer;
     animation: start-ani 1s forwards;
-    touch-action: pan-x pan-y;
 }
 
 .page {
@@ -172,6 +170,7 @@ body{
     backface-visibility: hidden;
     transform-style: preserve-3d;
     overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
     overflow-x: hidden;
 }
 
@@ -222,7 +221,7 @@ body{
     display: block;
     position: absolute;
     left: 10px;
-    right: 3px;
+    right: 2px;
     top: 10px;
     bottom: 10px;
     border: 1px solid tan;
