@@ -139,11 +139,28 @@
         targetPos.y = e.clientY - window.innerHeight * 0.7
     })
 
-    window.addEventListener('resize', ()=>{
-        const ww = window.innerWidth
+    // window.addEventListener('resize', ()=>{
+    //     const ww = window.innerWidth
 
-        if(ww >= 1921){
+    //     if(ww >= 1921){
+    //         window.location.href = '/mini-projects/index.html'
+    //     }
+    // })
+
+    window.onload = function(){
+        checkScreenSize()
+    }
+
+    window.onresize = function(){
+        checkScreenSize()
+    }
+
+    function checkScreenSize(){
+        const screenWidth = screen.availWidth;
+
+        if(screenWidth >= 1921){
             window.location.href = '/mini-projects/index.html'
         }
-    })
+    }
+
 })()
