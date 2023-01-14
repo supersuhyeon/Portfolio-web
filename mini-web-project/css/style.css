@@ -121,6 +121,7 @@ body{
     transition: 1s;
     cursor: pointer;
     animation: start-ani 1s forwards;
+    touch-action: pan-x pan-y;
 }
 
 .page {
