@@ -23,6 +23,7 @@ body{
     background-size: cover;
     /* background-image: url('../images/tablewood.jpg'); */
     /* background-size: auto 130px; */
+    overflow: hidden;
 }
 
 /* local nav */
@@ -324,8 +325,8 @@ body{
 .close-btn{
     display: none;
     position: absolute;
-    top: -8%;
-    left: 47%;
+    top: -5vh;
+    left: 12vw;
     font-size: 1.2rem;
     color: #fff;
     text-shadow: rgba(0,0,0,0.3) 0 1px 0;
