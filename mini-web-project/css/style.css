@@ -347,6 +347,7 @@ body{
 }
 
 .comingsoon-wrapper{
+    width: 100%;
     margin-top: 10vh;
     text-align: center;
 }
