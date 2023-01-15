@@ -1,6 +1,6 @@
-let portrait = window.matchMedia("(orientation: portrait)");
+let landscape = window.matchMedia("(orientation: landscape)");
 
-portrait.addEventListener("change", function(e) {
+landscape.addEventListener("change", function(e) {
     if(e.matches) {
         if(window.innerWidth >= 1024 && window.innerWidth <= 1900){
             window.location.href = '/mini-web-project/index.html'
