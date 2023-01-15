@@ -151,4 +151,6 @@
     }else{
         document.querySelector('.hand').style.display = 'block'
     }
+
+    document.querySelector('.page-face').style.overflowY = "scroll"
 })()

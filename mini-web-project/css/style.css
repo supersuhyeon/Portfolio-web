@@ -177,10 +177,6 @@ body{
 .page-face.comingsoon{
     background-image: url('/mini-web-project/images/comingsoon2.png');
     background-size: cover;
-
-    overflow-y: scroll;
-    -webkit-overflow-scrolling:touch;
-    overflow-x: hidden;
 }
 
 .page-face:hover .semi-text{
