@@ -246,6 +246,7 @@ body{
     padding: 2em;
     transform-style: preserve-3d;
     transition: 0.5s;
+    flex: 1;
 }
 
 .zoom-in .menu-item{
@@ -347,12 +348,11 @@ body{
 }
 
 .comingsoon-wrapper{
-    width: 100%;
-    height: 100%;
     margin-top: 10vh;
     text-align: center;
-    margin-bottom: 20vh;
+    flex: 1;
 }
+
 .gform-main-title{
     margin-bottom: 10px;
 }
