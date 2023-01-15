@@ -53,7 +53,7 @@ const projectRelocation = document.querySelector('.nav-games')
 
 projectRelocation.addEventListener('click', ()=>{
 
-    if(window.innerWidth >= 768 && window.innerWidth <= 1900){
+    if(window.innerWidth >= 1024 && window.innerWidth <= 1900){
         window.location.href = '/mini-web-project/index.html'
     }else{
         window.location.href = '/mini-projects/index.html'
