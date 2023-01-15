@@ -140,7 +140,7 @@
     })
 
     window.addEventListener('resize', ()=>{
-        if(window.innerWidth < 768 || window.innerWidth > 1900){
+        if(window.innerWidth <= 1024 || window.innerWidth > 1900){
             window.location.href = '/mini-projects/index.html'
             
         }

@@ -285,7 +285,7 @@ section {
     font-size: 24px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
 
     .local-nav-links{
         display: none;
@@ -374,7 +374,7 @@ section {
     margin: 3rem auto 1rem;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
     .intro h1{
         font-size: 2.5rem;
     }

@@ -600,7 +600,7 @@ footer{
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
 
 	body.stop-scroll {
 		height: 100%;
