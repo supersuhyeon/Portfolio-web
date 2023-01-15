@@ -177,7 +177,11 @@ body{
 .page-face.comingsoon{
     background-image: url('/mini-web-project/images/comingsoon2.png');
     background-size: cover;
-    height: 100%;
+    overflow-y: auto;
+}
+
+.comingsoon-wrapper{
+    margin-top: 1.2rem;
 }
 
 .page-face:hover .semi-text{
@@ -247,8 +251,6 @@ body{
     padding: 2em;
     transform-style: preserve-3d;
     transition: 0.5s;
-    height: 100%;
-    min-height: 0;
 }
 
 .zoom-in .menu-item{
@@ -326,51 +328,15 @@ body{
     margin-right: 5px;
 }
 
-.close-btn{
-    display: none;
-    position: absolute;
-    top: -5vh;
-    left: 12vw;
-    font-size: 1.2rem;
-    color: #fff;
-    text-shadow: rgba(0,0,0,0.3) 0 1px 0;
-    backface-visibility: hidden;
-}
-
-.leafelt-opened .close-btn{
-    display: inline-block;
-}
-
-.menu-item-info{
-    width: 100%;
-}
-
 .gform-main-title{
     font-size: 1rem;
-}
-
-.comingsoon-wrapper{
-    flex: 1 1 auto;
-    overflow-y: auto;
-}
-
-.gform-main-title{
     margin-bottom: 10px;
 }
+
 .gform-desc{
     font-size: 0.8rem;
     margin-bottom: 20px;
 }
-
-.send-btn{
-    color: black;
-    font-family: 'Proxima Nova';
-    font-size: 0.6rem;
-    background: #ddd;
-    padding: 10px;
-    cursor: pointer;
-    /* border-radius: 2px; */
-  }
 
 .gform-notice{
     font-size: 0.8rem;
@@ -398,12 +364,36 @@ body{
     width: 100%;
 }
 
- .menu-item-info .gform .send-btn.disabled{
-  background-color: rgb(184, 184, 184);
-  color: rgb(93, 93, 93);
-  cursor: not-allowed;
+.send-btn{
+    color: black;
+    font-family: 'Proxima Nova';
+    font-size: 0.6rem;
+    background: #ddd;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.menu-item-info .gform .send-btn.disabled{
+    background-color: rgb(184, 184, 184);
+    color: rgb(93, 93, 93);
+    cursor: not-allowed;
 }
 
 .thankyou_message{
     font-size: 0.6rem;
+}
+
+.close-btn{
+    display: none;
+    position: absolute;
+    top: -5vh;
+    left: 12vw;
+    font-size: 1.2rem;
+    color: #fff;
+    text-shadow: rgba(0,0,0,0.3) 0 1px 0;
+    backface-visibility: hidden;
+}
+
+.leafelt-opened .close-btn{
+    display: inline-block;
 }
