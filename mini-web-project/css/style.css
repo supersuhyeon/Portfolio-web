@@ -172,12 +172,15 @@ body{
     overflow-y: scroll;
     -webkit-overflow-scrolling:touch;
     overflow-x: hidden;
-    min-height: 0;
 }
 
 .page-face.comingsoon{
     background-image: url('/mini-web-project/images/comingsoon2.png');
     background-size: cover;
+
+    overflow-y: scroll;
+    -webkit-overflow-scrolling:touch;
+    overflow-x: hidden;
 }
 
 .page-face:hover .semi-text{
@@ -247,8 +250,6 @@ body{
     padding: 2em;
     transform-style: preserve-3d;
     transition: 0.5s;
-    height: 100%;
-    min-height: 0;
 }
 
 .zoom-in .menu-item{
@@ -343,7 +344,6 @@ body{
 
 .menu-item-info{
     width: 100%;
-    flex: 1;
 }
 
 .gform-main-title{
