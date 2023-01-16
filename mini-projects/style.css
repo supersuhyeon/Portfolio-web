@@ -18,22 +18,23 @@
 
 .project-flower-box{
     display: flex;
-    width: 972px;
 }
 
-.before-performance,
-.after-performance{
-    width: 476px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: var(--font-light-color);
-    padding: 2rem;
-    box-sizing: border-box;
+.project-flower-box li{
+    flex: 1;
     margin-top: 1rem;
     filter: grayscale(0.5);
+}
+
+.project-flower-box li:hover{
+    filter: grayscale(0);
+}
+
+.project-flower-box li a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: var(--font-light-color);
 }
 
 .before-performance{
@@ -42,6 +43,7 @@
     background-size: cover;
    background-repeat: no-repeat;
     border-radius: 20px;
+    padding: 1rem;
 }
 
 .after-performance{
@@ -49,12 +51,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 20px;
-    
-}
-
-.before-performance:hover,
-.after-performance:hover{
-    filter: grayscale(0);
+    padding: 1rem;
 }
 
 .project-flower-box-mobile{
