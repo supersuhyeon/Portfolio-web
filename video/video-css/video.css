@@ -3,16 +3,16 @@
 }
 
 .intro h1{
-    margin-bottom: 1em;
+    margin-bottom: 2.5rem;
     text-align: center;
     font-size: 6rem;
 }
 
 .intro .intro-desc{
-    margin-top: 2em;
+    margin-top: 2.5rem;
     margin-bottom: 8em;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.5rem;
 }
 
 .swiper.mySwiper .swiper-slide{
@@ -40,14 +40,19 @@ iframe{
 }
 
 .latestcontents .contents-title{
-    font-size: 40px;
-    font-family: 'proxima_nova_altbold';
+    margin-top: 1rem;
+}
+
+.latestcontents .contents-title span{
+    font-size: 1.5rem;
+    font-family: 'Proxima Nova';
+    background: linear-gradient(to top, #d0f8ee 50%, transparent 50%);
+    font-weight: bold;
 }
 
 .latestcontents .contents-title p{
-    margin-top: 1em;
-    font-size: 1.4rem;
-    font-family: 'Proxima Nova';
+    margin-top: 1rem;
+    font-size: 1.2rem;
 }
 
 .contents-list {
@@ -69,20 +74,17 @@ iframe{
 }
 
 .channel-name{
+    font-size: 1.2rem;
     font-weight: bold;
-    font-size: 1.4em;
 }
 
 .channel-desc{
-    font-size: 1.1em;
-    line-height: 1.4;
+    font-size: 1rem;
+    line-height: 1.6;
 }
 
-.content-box .mobile-deco{
-    width: 30px;
-    height: 3px;
-    background-color: black;
-    display: none;
+.channel-desc strong{
+    background: linear-gradient(to top, #d0f8ee 50%, transparent 50%);
 }
 
 .short-form-list{
@@ -99,7 +101,6 @@ iframe{
     margin: 5px;
 }
 
-
 .gallery{
     height: 100%;
     background-color: whitesmoke;
@@ -107,15 +108,19 @@ iframe{
     padding-bottom: 2em;
 }
 
-.gallery .gallery-title p{
-    font-size: 2em;
-    font-family: 'proxima_nova_ltsemibold';
-    padding-top: 1em;
+.gallery .gallery-title{
+    padding-top: 1rem;
 }
 
 .gallery .gallery-title span{
-    font-size: 1.4rem;
-    line-height: 1.6;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    font-family: 'proxima_nova_ltsemibold';
+}
+
+.gallery .gallery-title p{
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 .gallery-box{
@@ -128,7 +133,7 @@ iframe{
     height: 100%;
     margin: auto;
     overflow: hidden;
-    padding: 2em 1em;
+    padding: 1rem 1rem;
 }
 
 .gallery-box .swiper-prev:hover,
@@ -138,7 +143,7 @@ iframe{
 }
 
 .swiper-pagination-bullets.swiper-pagination-horizontal{
-    bottom: -5px;
+    bottom: -12px;
 }
 
 footer{
@@ -153,51 +158,45 @@ footer{
 
 @media screen and (max-width: 1023px){
     .intro h1{
-        margin-bottom: 1em;
+        margin-bottom: 2rem;
         text-align: center;
         font-size: 4rem;
     }
 
     .intro .intro-desc{
-        margin-top: 2em;
-        margin-bottom: 8em;
+        margin-top: 2rem;
+        margin-bottom: 8rem;
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
     
     .latestcontents{
         border-top: 0;
-        margin-top: 10em;
+        margin-top: 10rem;
     }
 
     .latestcontents .contents-title{
-        font-size: 1.8em;
-    }
-
-    .contents-title p{
-        font-size: 0.7em;
+        font-size: 1.5rem;
     }
 
     .channel-name{
-        font-weight: bold;
-        font-size: 1.4em;
+        font-size: 1.3rem;
     }
     
     .channel-desc{
-        font-size: 1.2em;
-        line-height: 1.4;
+        font-size: 1rem;
     }
 
-    .gallery .gallery-title p{
-        font-size: 1.8em;
+    .gallery .gallery-title span{
+        font-size: 1.5rem;
     }
     
-    .gallery .gallery-title span{
-        font-size: 1.2em;
+    .gallery .gallery-title p{
+        font-size: 1.2rem;
     }
     
     .contents-list {
-        margin-top: 1em;
+        margin-top: 1rem;
         display: flex;
         flex-wrap: wrap;
     }
@@ -205,13 +204,9 @@ footer{
     .contents-list .content-box{
         width: 100%;
         height: 100%;
-        margin: 3em auto;
+        margin: 3rem auto;
         padding: 0;
         box-sizing: border-box;
         border-left: 0;
-    }
-
-    .content-box .mobile-deco{
-        display: block;
     }
 }

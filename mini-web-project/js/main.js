@@ -59,6 +59,7 @@
         currentMenu = elem;
         currentMenu.classList.add('current-menu')
         document.querySelector('.local-nav').classList.add('hidden')
+        document.querySelector('footer').classList.add('hidden')
     }
 
     function zoomOut(){
@@ -66,6 +67,7 @@
         if(currentMenu){
             document.body.classList.remove('zoom-in');
             document.querySelector('.local-nav').classList.remove('hidden')
+            document.querySelector('footer').classList.remove('hidden')
 			currentMenu.classList.remove('current-menu');
 			currentMenu = null;
         }

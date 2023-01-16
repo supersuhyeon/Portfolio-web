@@ -88,8 +88,6 @@
             xhr.send(encoded);
           }
         }
-
-       
     }
     
     function loaded() {

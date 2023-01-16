@@ -24,6 +24,7 @@ body{
 
 .local-nav{
     height: 52px;
+    letter-spacing: 1px;
     padding: 0 1rem;
     top: 0;
     left: 0;
@@ -72,14 +73,18 @@ body{
     position: absolute;
     z-index: 99;
     left: 10px;
-    bottom: 10px;
+    bottom: 50px;
 }
 
 .bgsound{
     font-size: 2rem;
-    color: #8cead2;
-    width: 40px;
-    height: 40px;
+    color: #3fd1ac;
+    padding: 0;
+    margin-right: 5px;
+}
+
+.bgsound-stop{
+    margin-right: 0;
 }
 
 .hand{
@@ -374,4 +379,25 @@ body{
 
 .leafelt-opened .close-btn{
     display: inline-block;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	border-top: 1px solid #ddd;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    padding: 10px;
+    font-family: 'proxima_nova_ltsemibold';
+}
+
+footer.hidden{
+   display: none;
+}
+
+footer p{
+	color: #ddd;
 }
