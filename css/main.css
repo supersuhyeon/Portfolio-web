@@ -230,31 +230,25 @@ a {
 	position: relative;
 	top: -10vh;
 	z-index: 5;
-	font-size: 3.5rem;
+	font-size: 4rem;
 	text-align: center;
 }
 .main-message {
 	font-family: 'Noto Sans KR', sans-serif;
-	top: 40vh;
-	font-size: 2.5rem;
+	top: 45vh;
+	font-size: 3rem;
 	opacity: 0;
 }
 .main-message.b {
-	font-size: 3.5rem;
+	font-size: 4rem;
 }
-.main-message.c {
-	font-size: 4.5rem;
-}
+
 .main-message p {
 	font-weight: bold;
 	text-align: center;
 	line-height: 1.2;
 }
-.main-message small {
-	display: block;
-	margin-bottom: 0.5em;
-	font-size: 1.2rem;
-}
+
 .mid-message {
 	max-width: 1000px;
 	margin: 0 auto;
@@ -453,6 +447,7 @@ a {
 .project.graphic{
     background: url('/images/project-graphic.png');
     background-size: cover;
+	
 }
 
 .project.javascript{
@@ -629,12 +624,6 @@ footer{
 	}
 	.main-message.b {
 		font-size: 7vw;
-	}
-	.main-message.c {
-		font-size: 10vw;
-	}
-	.main-message small {
-		font-size: 1.5vw;
 	}
 
 	.mid-message.introduction,

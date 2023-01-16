@@ -17,7 +17,6 @@ const burgerCheck = document.querySelector('.burger-check')
 				document.body.classList.remove('stop-scroll')
 				document.querySelector('.wrapper').classList.remove('active')
 			}
-			
 		})
 
 		const mobileMenuItems = document.querySelectorAll('.menu-mobile div a')
@@ -26,7 +25,7 @@ const burgerCheck = document.querySelector('.burger-check')
 				//햄버거 메뉴 사라지기.
 				document.querySelector('.wrapper').classList.remove('active')
 			})
-		})
+})
 
 
 const toTopEl = document.querySelector('#to-top')
@@ -53,23 +52,11 @@ const projectRelocation = document.querySelector('.nav-games')
 
 projectRelocation.addEventListener('click', ()=>{
 
-    if(window.innerWidth >= 1024 && window.innerWidth <= 1900){
+    if(window.innerWidth >= 1024 && window.innerWidth <= 1919){
         window.location.href = '/mini-web-project/index.html'
     }else{
         window.location.href = '/mini-projects/index.html'
     }
-
-    // if(!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
-
-    //     const screenWidth = screen.availWidth
-    //     if(screenWidth >= 1919){
-    //         window.location.href = '/mini-projects/index.html'
-    //     }else{
-    //         window.location.href = '/mini-web-project/index.html'
-    //     }
-    //   }else{
-    //     window.location.href = '/mini-projects/index.html'
-    //   }
 })
 
 

@@ -124,9 +124,8 @@
     })
 
     window.addEventListener('resize', ()=>{
-        if(window.innerWidth <= 1023 || window.innerWidth > 1900){
-            window.location.href = '/mini-projects/index.html' 
-            
+        if(window.innerWidth <= 1023 || window.innerWidth >= 1920){
+            window.location.href = '/mini-projects/index.html'  
         }
     })
 
@@ -135,5 +134,23 @@
     }else{
         document.querySelector('.hand').style.display = 'block'
     }
+
+    const myName = document.querySelector('.local-nav-links .my-name')
+    myName.addEventListener('mouseover', ()=>{
+        myName.innerText = '← Back to main'
+})
+
+    myName.addEventListener('mouseout', ()=>{
+        myName.innerText = 'Suhyeon Kim'
+    })
+
+    const projectRelocation = document.querySelector('.nav-games')
+    projectRelocation.addEventListener('click', ()=>{
+    if(window.innerWidth >= 1024 && window.innerWidth <= 1919){
+        window.location.href = '/mini-web-project/index.html'
+    }else{
+        window.location.href = '/mini-projects/index.html'
+    }
+})
 
 })()

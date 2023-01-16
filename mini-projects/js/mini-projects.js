@@ -1,13 +1,5 @@
-
-// screen.orientation.addEventListener('change', function() {
-// 	// alert(screen.orientation.type);
-//     if(screen.orientation.type === 'portrait-primary'){
-//         window.location.href = '/mini-web-project/index.html'
-//     }
-// });
-
 window.addEventListener('resize', ()=>{
-    if(window.innerWidth >= 1024 && window.innerWidth <= 1900){
+    if(window.innerWidth >= 1024 && window.innerWidth <= 1919){
         window.location.href = '/mini-web-project/index.html'
     }
 })

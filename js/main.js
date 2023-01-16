@@ -57,14 +57,6 @@
 			if (sceneInfo[i].type === 'sticky') {
 				sceneInfo[i].scrollHeight = sceneInfo[i].heightNum * window.innerHeight;
 			} else if (sceneInfo[i].type === 'normal')  {
-                // objs.content가 없는 경우, sceneInfo에 objs.content를 추가해야 합니다.
-				// 예를들어 아래의 구조라면, content는 섹션의 내용을 통째로 감싸는 .description으로 지정해주시면 됩니다.
-				// 강의에서 진행하는 메인 소스(main.js)에 구현되어 있는 부분을 참고하시면 쉽습니다.
-				// <section class="scroll-section">
-				//     <div class="description">
-				//         lorem ipsum
-				//     </div>
-				// </section>
 				sceneInfo[i].scrollHeight = sceneInfo[i].objs.content.offsetHeight + window.innerHeight * 0.5;
 			}
             sceneInfo[i].objs.container.style.height = `${sceneInfo[i].scrollHeight}px`;
@@ -301,22 +293,11 @@
 
 		projectRelocation.addEventListener('click', ()=>{
 
-			if(window.innerWidth >= 1024 && window.innerWidth <= 1900){
+			if(window.innerWidth >= 1024 && window.innerWidth <= 1919){
 				window.location.href = '/mini-web-project/index.html'
 			}else{
 				window.location.href = '/mini-projects/index.html'
 			}
-			// if(!navigator.userAgent.match(/Android|Mobile|iP(hone|od|ad)|BlackBerry|IEMobile|Kindle|NetFront|Silk-Accelerated|(hpw|web)OS|Fennec|Minimo|Opera M(obi|ini)|Blazer|Dolfin|Dolphin|Skyfire|Zune/)){
-
-			// 	const screenWidth = screen.availWidth
-			// 	if(screenWidth >= 1919 || window.innerWidth < 769){
-			// 		window.location.href = './mini-projects/index.html'
-			// 	}else{
-			// 		window.location.href = './mini-web-project/index.html'
-			// 	}
-			//   }else{
-			// 	window.location.href = './mini-projects/index.html'
-			//   }
 		})
 
   		window.addEventListener('resize', () => {
