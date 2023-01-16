@@ -3,15 +3,11 @@
     const hand = document.querySelector('.hand')
     const pageElems = document.querySelectorAll('.page')
     let pageCount = 0;
-    //현재 클릭해서 활성화된 아이템 저장
     let currentMenu;
-    //거리
     let distX;
     let distY;
 
-    // 손의 현재위치가져오기 (마우스위치랑 비교할 대상)
     const handPos = {x:0,y:0};
-    // 마우스 위치를 담을 객체
     const targetPos = {x:0, y:0}
 
     function getTarget(elem, className){
@@ -22,7 +18,6 @@
                 return
             }
         }
-
         return elem
     }
 
@@ -37,40 +32,30 @@
 
     function zoomIn(elem){
 
-        // elem에는 menuitem이 들어온다
         const rect = elem.getBoundingClientRect()
-        console.log(rect.left, rect.top)
 
-        // 목표위치
-        // const dx = window.innerWidth/2 - (rect.x + rect.width/2)
-        const dx = window.innerWidth/2 - (rect.x + rect.width/2 + 40)
-        const dy = window.innerHeight/2 - (rect.y + rect.height/2 + 150)
-        // const dy = window.innerHeight/2 - (rect.y + rect.height/2 + 150)
+        const dx = window.innerWidth/2 - (rect.x + rect.width/2)
+        const dy = window.innerHeight/2 - (rect.y + rect.height/2)
         let angle;
 
         switch(parseInt(elem.parentNode.parentNode.parentNode.dataset.page)){
             case 1:  
-            
-                angle = -28
-                leaflet.style.transform = `translate3d(${dx * 0.04}vw, ${dy * 0.01}vh, 30vw) rotateY(${angle}deg) scale(1)`
+                angle = -30
+                leaflet.style.transform = `translate3d(${dx*0.5}px, ${dy * 0.01}px, 30vw) rotateY(${angle}deg)`
                 break;
 
             case 2:
-                
                 angle = 0
-                leaflet.style.transform = `translate3d(${dx * 0.01 + 0.6}vw, ${dy * 0.01}vh, 30vw) rotateY(${angle}deg) scale(1)`
+                leaflet.style.transform = `translate3d(${dx * 0.01}px, ${dy * 0.01}px, 30vw) rotateY(${angle}deg)`
                 break;
 
             case 3:
-                
                 angle = 30
-                leaflet.style.transform = `translate3d(${dx * 0.04}vw, ${dy * 0.01}vh, 30vw) rotateY(${angle}deg) scale(1)`
+                leaflet.style.transform = `translate3d(${dx * 0.5}px, ${dy * 0.01}px, 30vw) rotateY(${angle}deg)`
                 break;
         }
 
         document.body.classList.add('zoom-in')
-        // leaflet.style.transform = `translate3d(${dx * 0.04}vw, ${dy * 0.01}vh, 30vw) rotateY(${angle}deg) scale(1)`
-        // leaflet.style.transform = `translate3d(${dx}px, ${dy}px, 30vw) rotateY(${angle}deg)`
         currentMenu = elem;
         currentMenu.classList.add('current-menu')
         document.querySelector('.local-nav').classList.add('hidden')
@@ -118,7 +103,6 @@
        let menuItemElem = getTarget(e.target, 'menu-item')
        if(menuItemElem){
 
-        //줌인된 상태에서는 동작하면 안됨
         if (!document.body.classList.contains('zoom-in')) {
             zoomIn(menuItemElem);
         }

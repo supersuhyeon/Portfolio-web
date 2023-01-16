@@ -28,17 +28,6 @@
         // singular form elements just have one value
         formData[name] = element.value;
   
-        // when our element has multiple items, get their values
-        // if (element.length) {
-        //   var data = [];
-        //   for (var i = 0; i < element.length; i++) {
-        //     var item = element.item(i);
-        //     if (item.checked || item.selected) {
-        //       data.push(item.value);
-        //     }
-        //   }
-        //   formData[name] = data.join(', ');
-        // }
       });
   
       // add form-specific values into the data
@@ -70,7 +59,6 @@
             email.focus();
             document.querySelector(".gform").action = " ";
         }else if(email.value.length === 0){
-            alert("hello")
             return
         }else{
             document.querySelector(".gform").action = "https://script.google.com/macros/s/AKfycbwGNiUTv98-qxYw8ZoypvZHrfM57p8IG5j7otanN2MhuWgLRWbhNtO0dYJZZru5QuwM1Q/exec";
@@ -103,33 +91,6 @@
 
        
     }
-      
-  
-    //   disableAllButtons(form);
-    //   var url = form.action;
-    //   var xhr = new XMLHttpRequest();
-    //   xhr.open('POST', url);
-    //   // xhr.withCredentials = true;
-    //   xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-    //   xhr.onreadystatechange = function() {
-    //       if (xhr.readyState === 4 && xhr.status === 200) {
-    //         form.reset();
-    //         var formElements = form.querySelector(".form-elements")
-    //         if (formElements) {
-    //           formElements.style.display = "none"; // hide form
-    //         }
-    //         var thankYouMessage = form.querySelector(".thankyou_message");
-    //         if (thankYouMessage) {
-    //           thankYouMessage.style.display = "block";
-    //         }
-    //       }
-    //   };
-    //   // url encode form data for sending as post data
-    //   var encoded = Object.keys(data).map(function(k) {
-    //       return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
-    //   }).join('&');
-    //   xhr.send(encoded);
-    // }
     
     function loaded() {
       // bind to the submit event of our form
@@ -139,32 +100,7 @@
       }
     };
     document.addEventListener("DOMContentLoaded", loaded, false);
-  
-    // function disableAllButtons(form) {
-    //   var buttons = form.querySelectorAll("button");
-    //   for (var i = 0; i < buttons.length; i++) {
-    //     buttons[i].disabled = true;
-    //   }
-    // }
-    
   })();
-
-// function check(){
-   
-//   var email = document.getElementById("email").value;
-//   if (email != "") {
-//       var exptext = /^[A-Za-z0-9_\.\-]+@[A-Za-z0-9\-]+\.[A-Za-z0-9\-]+/;
-//       if (exptext.test(email) == false) {
-//           //이메일 형식이 알파벳+숫자@알파벳+숫자.알파벳+숫자 형식이 아닐경우			
-//           alert("wrong email type");
-//           document.formtag.email.focus();
-//           document.getElementById("form태그의 id").action = " ";
-//       }
-//   }else{
-//       if(email.trim().length === 0){
-//           return
-//       }
-//   }}
 
 function play(){
     const audio = document.querySelector('#audio1')
