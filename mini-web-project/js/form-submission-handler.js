@@ -70,6 +70,11 @@
             xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xhr.onreadystatechange = function() {
                 if (xhr.readyState === 4 && xhr.status === 200) {
+                  dataLayer.push({
+                    event:'ajaxComplete',
+                    response : form.querySelector(".thankyou_message h2").innerText
+                  })
+                  console.log(dataLayer)
                   form.reset();
                   var formElements = form.querySelector(".form-elements")
                   if (formElements) {
