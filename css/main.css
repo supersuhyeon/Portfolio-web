@@ -326,7 +326,7 @@ a {
 
 .ribbon-path path {
 	fill: none;
-	stroke: var(--bg-home-color);
+	stroke: #0B2545;
 	stroke-width: 62;
 	stroke-linecap: round;
 	stroke-linejoin: round;
