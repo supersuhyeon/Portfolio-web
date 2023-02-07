@@ -250,27 +250,27 @@
 			})
 		})
 
-		const burgerCheck = document.querySelector('.burger-check')
-		
-		
-		burgerCheck.addEventListener('click',()=>{
-			if(burgerCheck.checked){
-				document.body.classList.add('stop-scroll')
-				document.querySelector('.wrapper').classList.add('active')
-			}else{
-				document.body.classList.remove('stop-scroll')
-				document.querySelector('.wrapper').classList.remove('active')
-			}
-			
-		})
+		const mobileMenuIcon = document.querySelector('.material-icons.menuicon')
+		mobileMenuIcon.addEventListener('click', ()=>{
+			document.querySelector('.menu-mobile').style.width = '75vw'
+			document.querySelector('.wrapper').classList.add('active')
+			document.body.classList.add('stop-scroll')
 
-		const mobileMenuItems = document.querySelectorAll('.menu-mobile div a')
-		mobileMenuItems.forEach((item)=>{
+			const mobileMenuItems = document.querySelectorAll('.menu-mobile .mobile-main-menu-bar a')
+			mobileMenuItems.forEach((item)=>{
 			item.addEventListener('click',()=>{
-				//클릭이되면 전체 영역 삭제
+				document.querySelector('.menu-mobile').style.width = '0px'
 				document.querySelector('.wrapper').classList.remove('active')
 				document.body.classList.remove('stop-scroll')
 			})
+		})
+		})
+
+		const mobileMenuIcon2 = document.querySelector('.material-icons.menuicon-inside')
+		mobileMenuIcon2.addEventListener('click', ()=>{
+			document.querySelector('.menu-mobile').style.width = '0px'
+			document.querySelector('.wrapper').classList.remove('active')
+			document.body.classList.remove('stop-scroll')
 		})
 
 		const btnToggle = document.querySelector('.viewmore')
@@ -289,8 +289,6 @@
 		})
 
 		const projectRelocation = document.querySelector('.project.javascript')
-		console.log(projectRelocation)
-
 		projectRelocation.addEventListener('click', ()=>{
 
 			if(window.innerWidth >= 1024 && window.innerWidth <= 1919){

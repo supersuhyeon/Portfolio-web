@@ -381,6 +381,53 @@ body{
     display: inline-block;
 }
 
+.fixed-sns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 14vh;
+}
+
+.fixed-sns.hidden{
+    display: none;
+}
+
+.fixed-sns p{
+    position: fixed;
+    top: 10vh;
+    right: 9px;
+    color: #ddd;
+}
+
+.fixed-sns span{
+    position: fixed;
+    top: 14vh;
+    right: 9px;
+    display: none;
+    color: #ddd;
+    border-bottom: 2px solid #3fd1ac;
+}
+
+.fixed-sns div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #3fd1ac;
+    border-radius: 10px 0 0 10px;
+    transition: .2s;
+}
+
+.fixed-sns div a{
+    text-decoration: none;
+    color: black;
+}
+
 footer{
     position: absolute;
     bottom: 0;

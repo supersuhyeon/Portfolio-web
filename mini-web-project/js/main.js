@@ -60,6 +60,7 @@
         currentMenu.classList.add('current-menu')
         document.querySelector('.local-nav').classList.add('hidden')
         document.querySelector('footer').classList.add('hidden')
+        document.querySelector('.fixed-sns').classList.add('hidden')
     }
 
     function zoomOut(){
@@ -68,6 +69,7 @@
             document.body.classList.remove('zoom-in');
             document.querySelector('.local-nav').classList.remove('hidden')
             document.querySelector('footer').classList.remove('hidden')
+            document.querySelector('.fixed-sns').classList.remove('hidden')
 			currentMenu.classList.remove('current-menu');
 			currentMenu = null;
         }
@@ -156,3 +158,25 @@
 })
 
 })()
+
+const arrowFixedSns = document.querySelector('.fixed-sns .material-icons')
+const fixedContents = document.querySelectorAll('.fixed-sns div')
+let isClosed = false;
+
+arrowFixedSns.addEventListener('click',()=>{
+isClosed = !isClosed
+fixedContents.forEach((fixedContent)=>{
+    if(isClosed){
+        fixedContent.style.transform = 'translateX(120px)'
+        arrowFixedSns.innerText = 'keyboard_double_arrow_left'
+        setTimeout(function() {
+            document.querySelector('.fixed-text').style.display = 'block'
+          }, 100);
+        
+    }else{
+        fixedContent.style.transform = 'translateX(0px)'
+        arrowFixedSns.innerText = 'keyboard_double_arrow_right'
+        document.querySelector('.fixed-text').style.display = 'none'
+    }
+})
+})

@@ -95,7 +95,8 @@ a {
 	height: 100vh;
 	transition: 0.5s ease;
 	z-index: 98;
-	max-width: 0;
+	/* max-width: 0; */
+    width: 0;
 	background-color: #112240;
 	box-shadow: -5px 7px 15px -3px rgba(2,12,27,0.7);
 	-webkit-box-shadow: -5px 7px 15px -3px rgba(2,12,27,0.7);
@@ -114,7 +115,8 @@ a {
   }
 
   .menu-mobile>div{
-	width: min(75vw, 400px);
+	/* width: min(75vw, 400px); */
+    width: 75vw;
 	height: 100%;
 	font-size: 1.4rem;
 	position: relative;
@@ -135,11 +137,8 @@ a {
 }
 
 .mobile-sns-menu-bar a{
-	margin-right: 10px;
-}
-
-.mobile-sns-menu-bar .mobile-sns-linkedin{
-	margin-right: 0;
+	/* margin-right: 8px; */
+    padding: 3px;
 }
 
   .menu-mobile a{
@@ -171,7 +170,7 @@ a {
 	height: 2px;
 	position: relative;
 	transition: background .2s ease-out;
-	width: 30px;
+	width: 18px;
   }
   
   .burger-icon .burger-sticks:before,
@@ -186,11 +185,11 @@ a {
   }
   
   .burger-icon .burger-sticks:before {
-	top: 8px;
+	top: 5px;
   }
   
   .burger-icon .burger-sticks:after {
-	top: -8px;
+	top: -5px;
   }
   
   .burger-check {
@@ -198,7 +197,8 @@ a {
   }
 
   .burger-check:checked~.menu-mobile {
-	max-width: 400px;
+	/* max-width: 400px; */
+    width: 75vw;
   }
   
   .burger-check:checked~.burger-icon .burger-sticks {
@@ -300,7 +300,7 @@ section {
         overflow: hidden !important;
         touch-action: none !important;
     }
-    
+
     .wrapper.active{
         height: 100%;
         opacity: 0.1;
@@ -416,6 +416,43 @@ section {
     }
 }
 
+.fixed-sns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    top: 14vh;
+}
+
+.fixed-sns p{
+    position: fixed;
+    top: 10vh;
+    right: 9px;
+}
+
+.fixed-sns span{
+    position: fixed;
+    top: 14vh;
+    right: 9px;
+    display: none;
+    color: rgb(129, 129, 129);
+    border-bottom: 2px solid #8cead2;
+}
+
+.fixed-sns div{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #8cead2;
+    border-radius: 10px 0 0 10px;
+    transition: .2s;
+}
+
 /* footer and others */
 footer{
 	border-top: 1px solid black;
@@ -440,7 +477,7 @@ footer{
 	justify-content: center;
 	align-items: center;
 	position: fixed;
-	bottom: 70px;
+	bottom: 30px;
 	right:30px;
 	z-index: 10;
 	visibility: hidden;

@@ -8,24 +8,15 @@ myName.addEventListener('mouseout', ()=>{
 })
 
 const burgerCheck = document.querySelector('.burger-check')
-		
-		burgerCheck.addEventListener('click',()=>{
-			if(burgerCheck.checked){
-				document.body.classList.add('stop-scroll')
-				document.querySelector('.wrapper').classList.add('active')
-			}else{
-				document.body.classList.remove('stop-scroll')
-				document.querySelector('.wrapper').classList.remove('active')
-			}
-		})
-
-		const mobileMenuItems = document.querySelectorAll('.menu-mobile div a')
-		mobileMenuItems.forEach((item)=>{
-			item.addEventListener('click',()=>{
-				//햄버거 메뉴 사라지기.
-				document.querySelector('.wrapper').classList.remove('active')
-			})
-})
+	burgerCheck.addEventListener('click',()=>{
+		if(burgerCheck.checked){
+			document.body.classList.add('stop-scroll')
+			document.querySelector('.wrapper').classList.add('active')
+		}else{
+			document.body.classList.remove('stop-scroll')
+			document.querySelector('.wrapper').classList.remove('active')
+		}
+	})
 
 
 const toTopEl = document.querySelector('#to-top')
@@ -57,6 +48,28 @@ projectRelocation.addEventListener('click', ()=>{
     }else{
         window.location.href = '/mini-projects/index.html'
     }
+})
+
+const arrowFixedSns = document.querySelector('.fixed-sns .material-icons')
+const fixedContents = document.querySelectorAll('.fixed-sns div')
+let isClosed = false;
+
+arrowFixedSns.addEventListener('click',()=>{
+    isClosed = !isClosed
+    fixedContents.forEach((fixedContent)=>{
+        if(isClosed){
+            fixedContent.style.transform = 'translateX(120px)'
+            arrowFixedSns.innerText = 'keyboard_double_arrow_left'
+            setTimeout(function() {
+                document.querySelector('.fixed-text').style.display = 'block'
+              }, 100);
+            
+        }else{
+            fixedContent.style.transform = 'translateX(0px)'
+            arrowFixedSns.innerText = 'keyboard_double_arrow_right'
+            document.querySelector('.fixed-text').style.display = 'none'
+        }
+    })
 })
 
 
