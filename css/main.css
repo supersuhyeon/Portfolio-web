@@ -116,7 +116,7 @@ a {
   }
 
 .material-icons.menuicon-inside{
-	color: yellow;
+	color: #8cead2;
 	padding: 14px 10px;
 	float: right;
 }
@@ -138,6 +138,10 @@ a {
 
 .mobile-main-menu-bar div{
 	margin-bottom: 20px;
+}
+
+.mobile-main-menu-bar div:last-child{
+	margin-top: 10px;
 }
 
 .mobile-sns-menu-bar{

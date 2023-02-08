@@ -387,7 +387,7 @@ body{
     align-items: center;
     position: fixed;
     right: 0;
-    top: 14vh;
+    top: 13.5vh;
 }
 
 .fixed-sns.hidden{
@@ -403,7 +403,7 @@ body{
 
 .fixed-sns span{
     position: fixed;
-    top: 14vh;
+    top: 13.5vh;
     right: 9px;
     display: none;
     color: #ddd;

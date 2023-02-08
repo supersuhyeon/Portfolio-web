@@ -422,7 +422,7 @@ section {
     align-items: center;
     position: fixed;
     right: 0;
-    top: 14vh;
+    top: 13.5vh;
 }
 
 .fixed-sns p{
@@ -433,7 +433,7 @@ section {
 
 .fixed-sns span{
     position: fixed;
-    top: 14vh;
+    top: 13.5vh;
     right: 9px;
     display: none;
     color: rgb(129, 129, 129);
