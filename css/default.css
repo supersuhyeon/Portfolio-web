@@ -2,8 +2,9 @@
 :root{
     /* color */
     --bg-color : #fff;
-	--bg-home-color : #0d192e;
-    --accent-color : #8cead2;
+	/* --bg-home-color : #0d192e; */
+	--bg-home-color : black;
+    --accent-color : gainsboro;
     --font-color:#000;
     --font-light-color:#fff;
 	--border-gray-color:#ddd;
