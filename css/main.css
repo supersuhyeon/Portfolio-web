@@ -112,7 +112,7 @@ a {
   }
 
 .material-icons.menuicon-inside{
-	color: #8cead2;
+	color: gainsboro;
 	padding: 14px 10px;
 	float: right;
 }
@@ -279,11 +279,21 @@ a {
 	max-width: 1000px;
 	padding: 0 1rem 0;
 	margin: auto;
+}
+
+.tool.dev{
+	display: grid;
+	grid-template-columns: repeat(5, 80px);
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.tool.palette{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
-	gap: 20px;
+	gap: 10px;
 }
 
 .tool a img{
@@ -303,6 +313,7 @@ a {
 }
 
 .main-message.b {
+	top: 38vh;
 	font-size: 4rem;
 }
 
@@ -438,10 +449,6 @@ a {
 .normal-content.contact{
 	margin-bottom: 8em;
 	text-align: center;
-}
-
-.normal-content.contact strong{
- font-size: 3.5rem;
 }
 
 .mid-message{
@@ -780,13 +787,22 @@ footer{
 	}
 
 	.tool{
-		max-width: 1200px;
+		max-width: 1000px;
+		padding: 0 1rem 0;
 		margin: auto;
+	}
+	.tool.dev{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		flex-wrap: wrap;
-		gap: 25px;
+		gap: 30px;
+	}
+	
+	.tool.palette{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
 	}
 	
 	.tool a img{
