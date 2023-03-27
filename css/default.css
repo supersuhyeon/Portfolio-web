@@ -2,12 +2,9 @@
 :root{
     /* color */
     --bg-color : #fff;
-	/* --bg-home-color : #0d192e; */
-	--bg-home-color : black;
+	--font-color:#000;
     --accent-color : gainsboro;
-    --font-color:#000;
     --font-light-color:#fff;
-	--border-gray-color:#ddd;
 }
 
 html {
@@ -54,11 +51,15 @@ img {
 button {
 	border: 0;
 	cursor: pointer;
-	color: var(--font-color);
-    background-color: var(--accent-color);
+	color: white;
+	background-color: #06c;
     transition: 0.2s;
     font-family: 'Proxima Nova', Georgia, sans-serif;
-    border-radius: 10px;
+    border-radius: 20px;
     padding: 10px;
 	display: block;
+}
+
+button:hover {
+	background-color: rgb(1, 114, 227);
 }

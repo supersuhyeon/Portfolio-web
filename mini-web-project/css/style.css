@@ -44,7 +44,6 @@ body{
 }
 
 .local-nav-links a:hover{
-    color: #3fd1ac;
     transform: scale(1.1);
 }
 
@@ -407,7 +406,7 @@ body{
     right: 9px;
     display: none;
     color: #ddd;
-    border-bottom: 2px solid #3fd1ac;
+    border-bottom: 2px solid gainsboro;
 }
 
 .fixed-sns div{
@@ -418,7 +417,7 @@ body{
     height: 30px;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #3fd1ac;
+    background-color: gainsboro;
     border-radius: 10px 0 0 10px;
     transition: .2s;
 }
