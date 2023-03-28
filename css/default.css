@@ -5,6 +5,17 @@
 	--font-color:#000;
     --accent-color : gainsboro;
     --font-light-color:#fff;
+	--gradient-shadow: linear-gradient(
+		45deg,
+		#f7c058,
+		#e96f50,
+		#d23076,
+		#a922b1,
+		#891ab0,
+		#cd2e76,
+		#ff5ae9,
+		#e2504c
+	);
 }
 
 html {

@@ -459,13 +459,50 @@ a {
     height: 100%;
     margin-bottom: 20px;
     cursor: pointer;
-    transition: 0.2s;
+    transition: 0.1s;
 	border-radius: 10px;
 	background: linear-gradient(to top, #242324, #43475c);
 	/* box-shadow: 0 6px 6px -4px rgb(128, 158, 160); */
-	box-shadow: 0 0 1px #ccc;
+	/* box-shadow: 0 0 2px #ccc; */
+	position: relative;
 	
 }
+
+.project:before,
+.project:after {
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: var(--gradient-shadow);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+
+.project:after {
+	filter: blur(5px);
+}
+
+
+.project:hover{
+    transform: none;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 200% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
         
 .project.openAI .p-title p{
 	background-clip: text;
@@ -504,9 +541,6 @@ a {
     margin-top: 1rem;
 }
 
-.project:hover{
-    transform: translateY(-5px);
-}
 
 .overlay{
 	width: 100%;
@@ -732,8 +766,14 @@ footer{
 		grid-column: 1/span 2;
 	}
 
-	.project {
-		margin: 0;
+	
+	.project:after {
+		filter: blur(20px);
+	}
+	
+	
+	.project:hover{
+		transform: translateY(-2px);
 	}
 
 	.blog-content-wrapper{
