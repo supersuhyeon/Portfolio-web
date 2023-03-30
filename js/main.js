@@ -43,7 +43,7 @@
 				path_dashoffset_in: [1401, 0, { start: 0.7, end: 0.8 }],
 				path_dashoffset_out: [0,-1401, { start: 0.85, end: 0.9 }]
 			}
-		}
+		},
 	];
 
 	function setLayout() {

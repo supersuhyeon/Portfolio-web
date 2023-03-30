@@ -268,7 +268,6 @@ a {
 }
 
 .main-message.b {
-	top: 38vh;
 	font-size: 3.5rem;
 	padding: 0 1rem 0;
 }
@@ -346,6 +345,7 @@ a {
 .scroll-effect-end .sticky-elem {
 	display: none !important;
 }
+
 
 .loading {
 	display: flex;
@@ -655,6 +655,7 @@ footer{
 .material-icons{
 	font-size: 24px;
 }
+
 
 @media (min-width: 1024px) {
 
