@@ -270,6 +270,7 @@ a {
 .main-message.b {
 	top: 38vh;
 	font-size: 3.5rem;
+	padding: 0 1rem 0;
 }
 
 .centered{
