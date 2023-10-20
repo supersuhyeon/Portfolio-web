@@ -55,6 +55,22 @@ iframe{
     font-size: 1.2rem;
 }
 
+.latestcontents .contents-pet{
+    margin-top: 5em;
+}
+
+.latestcontents .contents-food{
+    margin-top: 2.5em;
+}
+
+.latestcontents .contents-pet a img{
+    margin-top: 1em;
+}
+
+.latestcontents .contents-pet div,.contents-food div{
+    margin-bottom: 10px;
+}
+
 .contents-list {
     margin-top: 5em;
     display: flex;
@@ -209,5 +225,9 @@ footer{
         padding: 0;
         box-sizing: border-box;
         border-left: 0;
+    }
+
+    .latestcontents .contents-food{
+        margin-top: 5em;
     }
 }
